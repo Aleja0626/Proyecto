@@ -1,0 +1,854 @@
+/*ESTO ES EL RESET INICIAL */ 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* SECCION ENCABEZADO */
+
+#encabezado{
+	width: 100%;
+	height: 1080px;
+}
+
+
+nav {
+
+	width: 100%;
+	height: 228px;
+	background-color: rgba(0,0,0,0.1);
+	position: absolute;
+	top: 0;
+	/*z-index: 5;*/
+	display: inline-flex;
+}
+
+#encabezado {
+
+	width: 100%;
+	height: 1080px;
+	background-color: #F3FFFA;
+}
+
+/* AQUI EMPIEZA EL ENCABEZADO*/
+#comienzo {
+
+	width: 100%;
+	height: 228px;
+	background-color: lightgray;
+}
+
+
+.menuH{
+
+	width: 100%;
+	height: 228px;
+	overflow: hidden;
+	float: right;
+	line-height: 120px;
+	background-color: rgba(0, 0, 0, 0.1);
+	text-decoration: none;
+}
+
+/* LOGO */
+
+.logo {
+
+	width: 250px;
+	height: 200px;
+	margin-top: 10px;
+	margin-left: 100px;
+	border-radius: 22px;
+}
+
+/*  TITULO DEL BLOG*/
+
+.tituloEncabezado {
+
+	width:1050px;
+	height: 180px;
+	font-size: 3.5rem;
+	color: #F4106C;
+	margin-top: 40px;
+	text-align: center;
+	margin-left: 70px;
+	text-shadow: -2px 6px 4px rgba(10,10,10,0.1);
+	font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+/*SECCION DE LAS RSS EN EL ENCABEZADO*/
+
+.rss{
+
+	width: 380px;
+	height: 200px;
+	overflow: hidden;
+	margin-left: 80px;
+	padding-top: 10px;
+	margin-right: 20px;
+	text-align: center;
+
+}
+
+.iconos{
+
+	width:100%;
+	height:100%;
+	float: left;
+	margin: 10px 10px;
+	margin-top: 50px;
+	text-decoration: none;
+}
+
+.iconos img {
+
+	width:105px;
+	height:105px;
+	margin-bottom: 25px;
+	margin: auto;
+}
+/* AQUI EMPIEZA LA PAGINA PRINCIPAL */
+#infoP {
+
+	width: 100%;
+	height: 1080px;
+	padding-top: 5px;
+}
+
+/* MENU VERTICAL DEL BLOG*/
+
+#menuV {
+
+	width: 400px;
+	height: 713px;
+	
+	background-color: rgba(55, 4, 68, 0.1);
+	margin-top: 245px;
+	margin-left: 30px;
+	list-style-type: none;
+	border-radius: 10px;
+}
+/* ELEMENTOS DEL MENU*/
+.elementoMenu{
+
+	font-size: 2.4rem;
+	padding-top: 15px;
+	font-family: "Nunito", sans-serif;
+	padding-left: 20px;
+}
+/* HOVER DE LOS ELEMENTOS DEL MENU*/
+.elementoMenu :hover{
+
+	background-color:rgba(90, 7, 76, 0.3);
+	color: white;
+	border-radius: 10px;
+}
+/* ESTILO DEL LINK*/
+.elementoMenu> a {
+	text-decoration: none;
+	color: black;
+}
+/* ESTILOS DEL SUBMENU*/
+#submenu {
+
+	font-size: 2rem;
+	font-family: "Nunito", sans-serif;
+	list-style-type: none;
+	padding-left: 28px;
+}
+/* ESTILOS DE LINK DEL SUBMENU*/
+.elemSubMenu> a {
+
+	text-decoration: none;
+	color: black;
+}
+/* HOVER EL SUBMENU*/
+#submenu :hover{
+
+	background-color:rgba(90, 7, 76, 0.3);
+	color: white;
+	border-radius: 10px;
+}
+
+/* ARTICULO DE TENDENCIAS*/
+
+#articuloP {
+
+	width: 849px;
+	height: 713px;
+	/*border-style: solid;*/
+	margin-top: 241px;
+	margin-left: 465px;
+}
+/* ESTILO DE IMAGEN PRINCIPAL*/
+.imagenP{
+
+	width: auto;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 25px;
+}
+
+.imagenP> img {
+
+	width: 850px;
+	height: 720px;
+	
+}
+
+.subtituloEncabezado {
+
+	position: absolute;
+	top: 700px;
+	font-family: "Edu VIC WA NT Beginner", cursive;
+	text-align: center;
+	font-size: 4rem;
+	z-index: 5;
+	margin-left: 40px;
+	color: #BA5E09;
+}
+
+/* SECCION DE TIENDA ONLINE CON LINK*/
+
+#tiendaOnline{
+
+	width: 492px;
+	height: 713px;
+	/*border-style: solid;*/
+	margin-top: -710px;
+	margin-left: 1350px;
+}
+
+.imgLinkTienda{
+
+	width: 476px;
+	height: 458px;
+	overflow: hidden;
+	text-align: center;
+	padding-top: 25px;
+}
+
+.imgLinkTienda> img {
+
+	width: 100%;
+	height: auto;
+
+}
+
+.tituloTienda {
+
+	width: 430px;
+	height: 100px;
+	font-family: "Edu VIC WA NT Beginner", cursive;
+	top: 720px;
+	font-size: 4rem;
+	color: #EA005E;
+	/*background-color: #073f46;*/
+	position: absolute;
+	margin-left: 25px;
+	padding-top: 40px;
+}
+
+/* SECCION DEL HERO IMAGE */
+
+#heroImage {
+
+	width: 100%;
+	height: 1080px;
+	background-color: #FFA9F6;
+	font-family: "Edu VIC WA NT Beginner", cursive;
+	overflow-x: hidden;
+}
+
+.fondoHero {
+
+	width: 100%;
+	height: 1080px;
+	background-size: cover;
+	position: absolute;
+}
+
+#fondoHero0{
+
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Media/Hero0.png");
+		z-index: 4;
+}
+
+#fondoHero1{
+
+		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Media/Hero1.jpeg");
+		z-index: 3;
+}
+
+#fondoHero2{
+
+		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Media/Hero2.jpg");
+		z-index: 2;
+}
+
+#fondoHero3{
+
+		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Media/Hero3.jpeg");
+		z-index: 1;
+}
+
+#fondoHero4{
+
+		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Media/Hero4.jpeg");
+		z-index: 0;
+}
+
+.imagenSaliente{
+
+	animation-name: imagenSalienteAnim;
+	animation-iteration-count: 1;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+
+}
+
+.imagenEntrante{
+
+	animation-name: imagenEntranteAnim;
+	animation-iteration-count: 1;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	
+}
+
+.imagenSuelta {
+
+	display: none;
+}
+
+@keyframes imagenSalienteAnim{
+
+	0%{margin-left: 0%;}
+	100%{margin-left: -100%;}
+}
+
+@keyframes imagenEntranteAnim{
+
+	0%{margin-left: 100%;}
+	100%{margin-left: 0%;}
+}
+
+/* SECCION DE ARTICULO PARTE 1*/
+
+#artUno {
+
+	width: 100%;
+	height: 1080px;
+	background-color: #CAECF0;
+	overflow: hidden;
+	font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+#tituloArticulos{
+	color: black;
+	font-family: "Edu VIC WA NT Beginner, medium", sans-serif;
+	text-align: center;
+	margin-top: 70px;
+	font-size: 3rem;
+
+}
+.contenedorArticulo{
+
+	width: 1200px;
+	height: 850px;
+	font-family: "nunito,regular";
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 360px;
+	margin-right: 360px;
+	padding-top: auto;
+}
+
+.articulo{
+
+	width:calc(33.33% - 50px);
+	height:calc(50% - 60px);
+	/*background-color: rgba(0, 0, 0, 0.3);*/
+	float: left;
+	margin-left: 30px;
+	margin-right: 10px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	border-radius: 30px;
+	position: relative;
+}
+
+
+.imagenArticulo img{
+
+	width: auto;
+	height: auto;
+	float: left;
+	border-radius: 30px;
+}
+
+.nombreArticulo{
+	position:absolute;
+	width: auto;
+	height: auto;
+	font-size: 2.1rem;
+	font-family: "nunito,regular";
+	color: rgb(16, 50, 161);
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	padding-top: 235px;
+	transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.nombreArticulo:hover{
+
+	color: rgb(133, 38, 104); 
+	border-color: black;
+    transform: scale(1.05); 
+}
+
+/* SECCION ARTICULOS PARTE 2*/
+#artDos{
+
+	width: 100%;
+	height: 1080px;
+	background-size: cover;
+	overflow: hidden;
+	background-color: #F3FFFA;
+}
+
+#verArticulo{
+
+	width: 365px;
+	height: 120px;
+	background-color: #55EDE4;
+	color: white;
+	font-size: 2rem;
+	padding: auto;
+	margin: 880px;
+	margin-left: 850px;
+	margin-top: 40px;
+	border-style: groove;
+	border: rgb(71, 158, 146) 2px outset;
+	text-decoration: none;
+	border-radius: 5px;
+	border-width: 3px;
+	font-family: "nunito,regular";
+}
+
+
+#verArticulo:hover {
+
+	border-style: solid;
+	border-color: #610952;
+	background-color: #ffffff;
+	color: #a50264;
+
+}
+
+/* SECCION TENDENCIA UNO*/
+#tendUno{
+
+	width: 100%;
+	height: 1080px;
+	overflow: hidden;
+	background-color: #FDFF9F;
+}
+
+#tituloTendencia{
+	
+	font-size: 3rem;
+	font-family:" Edu AU VIC WA NT Hand,Medium" sans-serif;
+	color: black;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.titSeccionTen{
+
+	font-size: 2.5rem;
+	font-family:" Edu AU VIC WA NT Hand,Medium" sans-serif;
+	color: black;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.contenedorTendencia{
+
+	width: 1200px;
+	height: 750px;
+	margin-left: 357px;
+	margin-right: 150px;
+	margin-top: 42px;
+	overflow: hidden;
+}
+
+.columTendencia{
+
+	width: 50%;
+	/*background-color: grey;*/
+	height: 715px;
+	margin-right:auto;
+	margin-left: auto;
+	float: left;
+	border-radius: 30px;
+	font-family: "nunito", sans-serif;
+	
+}
+
+#imgTendencia{
+
+	width: 562px;
+	height: 618px;
+	background-color: grey;
+	margin-right:150px;
+	margin-top: 50px;
+	border-radius: 30px;
+	text-align: center;
+
+}
+
+.textoTendencia {
+
+	font-size: 1.8rem;
+	padding-left: 50px;
+	margin-right: 20px;
+	margin-left: 50px;
+	margin-top: 10px;
+	font-family: "nunito", sans-serif;
+}
+
+/* SECCION TENDENCIA DOS*/
+#tendDos{
+	
+	width: 100%;
+	height: 1080px;
+	overflow: hidden;
+	background-color: #F3FFFA;
+}
+
+
+/* SECCION CONSEJO UNO*/
+#consejoUno{
+
+	width: 100%;
+	height: 1080px;
+	background-size: cover;
+	overflow: hidden;
+	background-color: #FDC4ED;
+}
+
+.titSeccionCons{
+
+	font-size: 2.1rem;
+	font-family:" Edu AU VIC WA NT Hand,Medium" sans-serif;
+	color: black;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+#contenedorConsejo{
+
+	width: 1200px;
+	height: 878px;
+	/*background-color: #610952;*/
+	margin-left: 360px;
+	margin-right: 360px;
+}
+
+.imgConsejo{
+
+	width: 619px;
+	height: 457px;
+	background-color: #a8569b;
+	text-align: center;
+	margin-left: 303px;
+
+}
+
+.txtConsejo{
+
+	font-size: 1.7rem;
+	padding-left: 50px;
+	margin-right: 20px;
+	margin-left: 50px;
+	margin-top: 10px;
+	font-family: "nunito", sans-serif;
+
+}
+
+.verConsejo{
+
+	width: 300px;
+	height: 60px;
+	text-align: center;
+	background-color: #FFA8CB;
+	color: white;
+	font-size: 2rem;
+	padding: auto;
+	border: #EA005E 2px  groove outset;
+	border-radius: 5px;
+	border-width: 3px;
+	font-family: ",regular";
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+.verConsejo> a{
+ 
+	font-family: "Edu AU VIC WA NT Hand medium";
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 5px;
+}
+
+
+.verConsejo:hover {
+
+	border-style: solid;
+	border-color: #610952;
+	background-color: #ffffff;
+	color: #a50264;
+
+}
+
+/*SECCION CONSEJO DOS*/
+#consejoDos{
+
+	width: 100%;
+	height: 1080px;
+	background-size: cover;
+	overflow: hidden;
+	background-color: #F3FFFA;
+}
+
+/* CONSEJO TRES*/
+#consejoTres{
+
+	width: 100%;
+	height: 1080px;
+	background-size: cover;
+	overflow: hidden;
+	background-color: #CAECF0;
+}
+
+/* FORMULARIO DE SUSCRIPCION*/
+
+#formulario{
+
+	width: 100%;
+	height: 1080px;
+	overflow: hidden;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Media/FondoFormulario.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+}
+
+
+#formu{
+
+	width: auto;
+	height: 450px;
+	float: right;
+	padding-left: 360px;
+	padding-top: 360px;
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin-right: 500px;
+	font-size: 3rem;
+
+}
+
+/* TITULO DEL FORMULARIO*/ 
+
+#textoForm{
+
+	font-size: 4.5rem;
+	color: white;
+	font-family: "Edu VIC WA NT Beginner", cursive;
+	font-weight: bold;
+}
+
+
+ /* INGRESO DE DATOS AL FORMULARIO*/
+
+input {
+
+	display: block;
+	width: 980px;
+	height:76px;
+	margin-top: 50px;
+	border-radius: 8px;
+	border-style: solid;
+}
+
+#formNombre {
+
+	color: #F3FFFA;
+	font-size: 3rem;
+	font-family: "Edu VIC WA NT Beginner", cursive;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#formCorreo {
+
+	color: #F3FFFA;
+	font-size: 3rem;
+	font-family: "Edu VIC WA NT Beginner", cursive;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#botonEnviar{
+
+	width: 279px;
+	height: 71px;
+	background-color: #8D0567;
+	padding: 5px;
+	font-size: 2.5rem;
+	font-family: "Nunito", sans-serif;
+	border: #A8166E 2px outset;
+	transition-property: color, border-style, background-color;
+	transition-duration: 0.8s;
+	text-align: center;
+	cursor: pointer;
+	color: #F3FFFA;
+	margin-left: 350px;
+}
+
+/* HOVER DEL BOTON*/
+#botonEnviar:hover {
+
+	border-style: solid;
+	border-color: #55EDE4;
+	background-color: #2D0231;
+	color: #EE42A9;
+
+}
+
+
+/* MODAL DE FORMULARIO*/
+/* DISEÑO DE LA CAJA DEL MODAL CONTACTO */
+
+#modalContacto{
+
+	z-index: -1;
+}
+
+#modalBoxC {
+
+	width: 700px;
+	height: 350px;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	padding: 55px;
+	border-radius: 50px;
+	border: white 5px solid;
+	z-index:auto;
+
+
+}
+
+/* DISEÑO DEL TEXTO DEL MODAL CONTACTO */
+
+#modalBoxC> h1 {
+
+	font-size: 2.4rem;
+	color: white;
+	text-align: center;
+	font-family: "nunito", cursive;
+	margin-top:20px;
+	font-weight: normal;
+}
+
+#modalBoxC> h2 {
+
+	font-size: 1.5rem;
+	color: white;
+	text-align: center;
+	font-family: "nunito",cursive;
+	font-weight: normal;
+	margin-bottom: 20px;
+
+}
+
+
+/* DISEÑO DEL BOTON DEL MODAL CONTACTO */
+
+#modalBoxC> button {
+
+
+	font-size: 1.7rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	font-family: "satisfy", cursive;
+	font-weight: normal;
+	color: white;
+	padding: 12px;
+	margin-top: 40px;
+	border-radius: 30px;
+	border:white 1px solid;
+
+
+}
+
+/* HOVER DEL BOTON MODAL DE CONTACTO */
+
+
+#modalBoxC> button:hover{
+
+	border-style: solid;
+	border-color: #610952;
+	background-color: #ffffff;
+	color: #a50264;
+}
+
+/* ESTE ES EL PIE DE PAGINA / FOOTER */
+#pie{
+
+  width:100%;
+  height:1080px;
+  padding-top: 850px;
+
+}
+
+#rssPie{
+
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-left: 200px;
+	padding-top: 25px;
+	text-align: center;
+
+}
+
+.iconosPie{
+
+	width:100%;
+	height:100%;
+	float: left;
+	margin: 33px 33px;
+	margin-top: 50px;
+}
+
+.iconosPie img {
+
+	width:115px;
+	height:105px;
+	margin-bottom: 25px;
+	margin: auto;
+}

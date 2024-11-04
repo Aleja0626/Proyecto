@@ -1,0 +1,32 @@
+
+nav {
+
+	width: 100%;
+	height: 228px;
+	background-color: rgba(0,0,0,0.1);
+	position: absolute;
+	top: 0;
+	/*z-index: 5;*/
+	display: inline-flex;
+    text-decoration: none;
+}
+
+#piePagina {
+
+    width: 100%;
+	height: 219px;
+	background-color: #F3FFFA;
+    text-decoration: none;
+
+}
+
+.politicas {
+
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    margin-left: 180px;
+    padding-right: 100px;
+    margin-top: 40px;
+}
