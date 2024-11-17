@@ -9,17 +9,20 @@
 </head>
 <body>
     <header>
-        <?php include '/includes/header.php';?>    
+		
+        <?php include '../includes/header.php';?>
+
     </header>
-    <section id ="artPrincipal">
+    <section class="articulos" id="artPrincipal">
         <div id="pPrincipal">
             <h1>ARTICULOS</h1>
             <img src="./MEDIA/" alt="">
         </div>
+		
     </section>
     <!-- SECCIONES DE ARTICULOS -->
     <section class="articulos">
-	 <!-- ARTICULO 1 -->			
+	<!-- ARTICULO 1 -->			
 				<h2>Articulo 1</h2>
 			
 			<div class="contenedorTendencia">
@@ -40,7 +43,7 @@
 
 					</p>   
 				</div>
-                <a id ="verArticulo" href="Articulos/articulo1.html" class="button">Ver Artículo</a>
+                <a id ="verArticulo" href="articulo1.php" class="button">Ver Artículo</a>
 			</div>
 		</section>  
         <!-- ARTICULO 2 -->
@@ -66,7 +69,7 @@
 
 					</p>   
 				</div>
-                <a id ="verArticulo" href="Articulos/articulo1.html" class="button">Ver Artículo</a>
+                <a id ="verArticulo" href="articulo2.php" class="button">Ver Artículo</a>
 			</div>
 		</section>  
          <!-- ARTICULO 3 -->
@@ -92,7 +95,7 @@
 
 					</p>   
 				</div>
-                <a id ="verArticulo" href="Articulos/articulo3.html" class="button">Ver Artículo</a>
+                <a id ="verArticulo" href="articulo3.php" class="button">Ver Artículo</a>
 			</div>
 		</section> 
          <!-- ARTICULO 4 -->
@@ -118,7 +121,7 @@
 
 					</p>   
 				</div>
-                <a id ="verArticulo" href="Articulos/articulo4.html" class="button">Ver Artículo</a>
+                <a id ="verArticulo" href="articulo4.php" class="button">Ver Artículo</a>
 			</div>
 		</section> 
          <!-- ARTICULO 5 -->
@@ -144,7 +147,7 @@
 
 					</p>   
 				</div>
-                <a id ="verArticulo" href="Articulos/articulo5.html" class="button">Ver Artículo</a>
+                <a id ="verArticulo" href="articulo5.php" class="button">Ver Artículo</a>
 			</div>
 		</section> 
          <!-- ARTICULO 6 -->
@@ -170,7 +173,7 @@
 
 					</p>   
 				</div>
-                <a id ="verArticulo" href="Articulos/articulo6.html" class="button">Ver Artículo</a>
+                <a id ="verArticulo" href="articulo6.php" class="button">Ver Artículo</a>
 			</div>
 		</section> 
          <!-- ARTICULO 7 -->
@@ -196,7 +199,7 @@
 
 					</p>   
 				</div>
-                <a id ="verArticulo" href="Articulos/articulo7.html" class="button">Ver Artículo</a>
+                <a id ="verArticulo" href="articulo7.php" class="button">Ver Artículo</a>
 			</div>
 		</section> 
          <!-- ARTICULO 8 -->
@@ -222,7 +225,7 @@
 
 					</p>   
 				</div>
-                <a id ="verArticulo" href="Articulos/articulo8.html" class="button">Ver Artículo</a>
+                <a id ="verArticulo" href="articulo8.php" class="button">Ver Artículo</a>
 			</div>
 		</section> 
          <!-- ARTICULO 9 -->
@@ -248,7 +251,7 @@
 
 					</p>   
 				</div>
-                <a id ="verArticulo" href="Articulos/articulo9.html" class="button">Ver Artículo</a>
+                <a id ="verArticulo" href="articulo9.php" class="button">Ver Artículo</a>
 			</div>
 		</section> 
          <!-- ARTICULO 10 -->
@@ -274,7 +277,7 @@
 
 					</p>   
 				</div>
-                <a id ="verArticulo" href="Articulos/articulo10.html" class="button">Ver Artículo</a>
+                <a id ="verArticulo" href="articulo10.php" class="button">Ver Artículo</a>
 			</div>
 		</section> 
          <!-- ARTICULO 11 -->
@@ -300,7 +303,7 @@
 
 					</p>   
 				</div>
-                <a id ="verArticulo" href="Articulos/articulo11.html" class="button">Ver Artículo</a>
+                <a id ="verArticulo" href="articulo11.php" class="button">Ver Artículo</a>
 			</div>
 		</section> 
          <!-- ARTICULO 12 -->
@@ -326,7 +329,7 @@
 
 					</p>   
 				</div>
-                <a id ="verArticulo" href="Articulos/articulo12.html" class="button">Ver Artículo</a>
+                <a id ="verArticulo" href="articulo12.php" class="button">Ver Artículo</a>
 			</div>
 		</section> 
     <footer>

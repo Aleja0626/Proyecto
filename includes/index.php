@@ -8,7 +8,7 @@
 </head>
 <body>
     <header id="encabezado">
-          <?php include "header.html"; ?>  
+            <?php include "header.html"; ?>  
     </header>
     <h1>Pagina de Articulos</h1>
     <p>En mantenimiento</p>

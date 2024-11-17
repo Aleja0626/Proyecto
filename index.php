@@ -3,19 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	 <!-- TITULO DE LA PAGINA  -->
-
+	<!-- TITULO DE LA PAGINA  -->
 	<title>Un mundo de princesas</title>
 	<link rel="stylesheet" href="CSS/style.css">
-
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<script src="JS/script.js"></script>
 
 	<!-- LINK DE LAS FUENTES -->
 
-		<!-- NUNITO -->
+	<!-- NUNITO -->
+	
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,45 +37,10 @@
 </head>
 
 <body>
-<header id="encabezado">
-
-	<!-- AQUI EMPIEZA EL MENU H -->
-		<nav class="menuH">
-
-			<!-- ESTE ES EL LOGO -->
-
-			<a href="index.html">
-			<img src="MEDIA/logoUMDP.jpg" alt="" class="logo">
-			</a>
-
-			<!-- TITULOS -->
-			<div class="tituloEncabezado">
-				<h1>Un mundo de Princesas</h1>
-			</div>
-	<!-- REDES SOCIALES -->
-			<div class="rss">
-
-				<!-- ENLACE DE WHATSAPP -->
-				<div class="iconos">
-					 	<a href="https://wa.me/573114060044?text=Hola%20Bienvenid%40s%20a%20Chikiticas%20pero%20lindas%2C%20encantados%20de%20conocerte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20ayudarte%3F" target="_blank" rel="noopener noreferrer">
-					      <img src="MEDIA/whatsapp.png" alt="">
-						</a>
-
-			    <!-- ENLACE DE FACEBOOK -->
-			 
-					  	<img src="MEDIA/facebook.png" alt="">
-					  	<a href="https://www.facebook.com/profile.php?id=100086729575474&locale=es_ES" target="_blank" rel="noopener noreferrer">
-						</a>
-					   
-					    <!-- ENLACE DE INSTAGRAM -->
-					   
-					  	<a href="https://www.instagram.com/chikiticasperolindas?igsh=MW05enMzNTBtMmZ1NQ==" target="_blank" rel="noopener noreferrer">
-							<img src="MEDIA/instagram.png" alt="">
-						</a>
-				</div>
-	 		 </div>
-		</nav> 
-		
+<?php
+	include "includes/header.php";
+?>
+<section id="encabezado">
 
 	<!-- AQUI EMPIEZA EL MENU VERTICAL -->
 	<div id="infoP">
@@ -120,7 +83,7 @@
 			</div>
 		</div>
 	</div>		
-	</header>
+	</section>
 
 
 	<section id="heroImage">
@@ -143,13 +106,13 @@
 			<h2 id="tituloArticulos">Articulos</h2>
 			<!-- ARTICULO 1	-->	
 
-			 <div class="contenedorArticulo" id="pestanaArticulo">
+			<div class="contenedorArticulo" id="pestanaArticulo">
 				
 						<div class="articulo ">
 							<div class="imagenArticulo ">
 								<img src="Media/art1.jpg" alt="">
 							</div>
-							<a class="nombreArticulo" href="articulo1.html" >Ropa para fiesta y Ocasiones Especiales</a>
+							<a class="nombreArticulo" href="Articulos/articulo1.php">Ropa para fiesta y Ocasiones Especiales</a>
 						</div>
 
 			<!-- ARTICULO 2	 -->
@@ -158,7 +121,7 @@
 							<div class="imagenArticulo ">
 								<img src="Media/art2.jpeg" alt="">
 							</div>
-							<a class="nombreArticulo" href="articulo2.html" >Aprende a escoger la talla adecuada</a>
+							<a class="nombreArticulo" href="Articulos/articulo2.php">Aprende a escoger la talla adecuada</a>
 						</div>
 
 			<!-- ARTICULO 3	 -->
@@ -167,7 +130,7 @@
 							<div class="imagenArticulo ">
 								<img src="Media/art3.jpeg" alt="">
 							</div>
-							<a class="nombreArticulo" href="articulo3.html">España, superpotencia en moda infantil</a>
+							<a class="nombreArticulo" href="Articulos/articulo3.php">España, superpotencia en moda infantil</a>
 						</div>
 
 			<!-- ARTICULO 4	 -->
@@ -176,7 +139,7 @@
 							<div class="imagenArticulo ">
 								<img src="Media/art4.jpeg" alt="">
 							</div>
-							<a class="nombreArticulo" href="articulo4.html">Ropa infantil en expansion por Europa</a>
+							<a class="nombreArticulo" href="Articulos/articulo4.php">Ropa infantil en expansion por Europa</a>
 						</div>
 
 			<!--ARTICULO 5	-->
@@ -185,7 +148,7 @@
 							<div class="imagenArticulo ">
 								<img src="Media/art5.jpg" alt="">
 							</div>
-							<a class="nombreArticulo" href="articulo5.html">Panorama actual de la Moda infantil</a>
+							<a class="nombreArticulo" href="Articulos/articulo5.php">Panorama actual de la Moda infantil</a>
 						</div>
 
 			<!--ARTICULO 6	-->
@@ -194,7 +157,7 @@
 							<div class="imagenArticulo ">
 								<img src="Media/art6.jpg" alt="">
 							</div>
-							<a class="nombreArticulo" href="articulo6.html">¿Skincare para las niñas?como cuidar la piel infantil</a>
+							<a class="nombreArticulo" href="Articulos/articulo6.php">¿Skincare para las niñas?como cuidar la piel infantil</a>
 						</div>			
 			</div>
 		</section>
@@ -206,13 +169,13 @@
 
 			<!-- ARTICULO 7	-->	
 
-			 <div class="contenedorArticulo" id="pestanaArticulo">
+			<div class="contenedorArticulo" id="pestanaArticulo">
 
 						<div class="articulo ">
 							<div class="imagenArticulo ">
 								<img src="Media/art7.jpeg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="articulo7.html">Ropa para fiesta y Ocasiones Especiales</a>
+							<a class ="nombreArticulo" href="Articulos/articulo7.php">Ropa para fiesta y Ocasiones Especiales</a>
 						</div>
 
 			<!-- ARTICULO 8	 -->
@@ -221,7 +184,7 @@
 							<div class="imagenArticulo ">
 								<img src="Media/art8.jpeg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="articulo8.html">Aprende a escoger la talla adecuada</a>
+							<a class ="nombreArticulo" href="Articulos/articulo8.php">Aprende a escoger la talla adecuada</a>
 						</div>
 
 			<!-- ARTICULO 9	 -->
@@ -230,7 +193,7 @@
 							<div class="imagenArticulo ">
 								<img src="Media/art9.jpg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="articulo9.html">España, superpotencia en moda infantil</a>
+							<a class ="nombreArticulo" href="Articulos/articulo9.php">España, superpotencia en moda infantil</a>
 						</div>
 
 			<!-- ARTICULO 10	 -->
@@ -239,7 +202,7 @@
 							<div class="imagenArticulo ">
 								<img src="Media/art10.jpg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="articulo10.html" class="text">Ropa infantil en expansion por Europa</a>
+							<a class ="nombreArticulo" href="Articulos/articulo10.php" class="text">Ropa infantil en expansion por Europa</a>
 						</div>
 
 			<!--ARTICULO 11	-->
@@ -248,7 +211,7 @@
 							<div class="imagenArticulo ">
 								<img src="Media/art11.jpg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="articulo11.html" class="text">Panorama actual de la Moda infantil</a>
+							<a class ="nombreArticulo" href="Articulos/articulo11.php" class="text">Panorama actual de la Moda infantil</a>
 						</div>
 
 			<!--ARTICULO 12	-->
@@ -257,10 +220,12 @@
 							<div class="imagenArticulo ">
 								<img src="Media/art12.jpg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="articulo12.html" class="text">¿Skincare para las niñas?como cuidar la piel infantil?</a>
+							<a class ="nombreArticulo" href="Articulos/articulo12.php" class="text">¿Skincare para las niñas?como cuidar la piel infantil?</a>
 						</div>			
 			</div>
-			<a id ="verArticulo" href="Articulos/articulos.php" class="button">Ver Artículos</a>
+			<div class="contenedorBoton">
+				<a id="verArticulo" href="Articulos/articulos.php" class="button">Ver Artículos</a>
+			</div>
 		</section>
 
 <!-- AQUI EMPIEZA LA SECCION DE LAS TENDENCIAS -->

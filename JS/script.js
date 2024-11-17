@@ -23,18 +23,18 @@ function heroSlideShow(){
 	document.getElementById("heroImage").style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))," +  listImgHero [bgcont];
 }
 
+// Start the hero slideshow
+setInterval(heroSlideShow, 5000); // Change image every 5 seconds
 
 // CODIGO SLIDESHOW  CON ANIMACION DEL HERO IMAGE
 
 let contAnim =0;
-let contMain =0;
-
 function imagenSalienteAnim() {
 
 	let listImgHeroAnim = document.getElementsByClassName("fondoHero");
 
 	contAnim++;
-	contMain = contAnim-1;
+	let contMain = contAnim-1;
 
 	if (contAnim == listImgHeroAnim.length){
 
@@ -67,7 +67,6 @@ function imagenSalienteAnim() {
 	}	
 
 }
-
 
 // MODAL PARA ENVIAR LA CONFIRMACION DEL FORMULARIO
 
@@ -111,11 +110,14 @@ function modalContacto() {
 }
 
 // FUNCION QUE NOS PERMITE CERRAR EL MODAL DEL FORMULARIO
-	function cerrarModalC(){
-		document.getElementById("modalContacto").style.display="none";
-		document.documentElement.style.overflow="auto";
+function cerrarModalC(){
+	document.getElementById("modalContacto").style.display="none";
+	document.documentElement.style.overflow="auto";
 
-		document.getElementById("formNombre").value="";
-		document.getElementById("formCorreo").value="";
+	document.getElementById("formNombre").value="";
+	document.getElementById("formCorreo").value="";
 
-	}
+}
+
+// Iniciar la animación del slideshow
+setInterval(imagenSalienteAnim, 5000); // Cambiar imagen cada 5 segundos
