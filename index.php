@@ -1,21 +1,22 @@
+<?php
+define('BASE_URL', 'http://localhost/Proyecto/');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	 <!-- TITULO DE LA PAGINA  -->
-
+	<!-- TITULO DE LA PAGINA  -->
 	<title>Un mundo de princesas</title>
-	<link rel="stylesheet" href="CSS/style.css">
-
+	<link rel="stylesheet" href="<?php echo BASE_URL; ?>CSS/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<script src="JS/script.js"></script>
+	<script src="<?php echo BASE_URL; ?>JS/script.js"></script>
 
 	<!-- LINK DE LAS FUENTES -->
 
-		<!-- NUNITO -->
+	<!-- NUNITO -->
+	
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,54 +31,19 @@
 	
 	<!-- LISTA DE IMAGENES PRE-CARGADAS -->
 
-	<link rel="preload" as="image" href="MEDIA/Hero0.png">
-	<link rel="preload" as="image" href="MEDIA/Hero1.jpeg">
-	<link rel="preload" as="image" href="MEDIA/Hero2.jpg">
-	<link rel="preload" as="image" href="MEDIA/Hero3.jpeg">
-	<link rel="preload" as="image" href="MEDIA/Hero4.jpeg">
+	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>MEDIA/Hero0.png">
+	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>MEDIA/Hero1.jpeg">
+	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>MEDIA/Hero2.jpg">
+	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>MEDIA/Hero3.jpeg">
+	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>MEDIA/Hero4.jpeg">
 
 </head>
 
 <body>
-<header id="encabezado">
-
-	<!-- AQUI EMPIEZA EL MENU H -->
-		<nav class="menuH">
-
-			<!-- ESTE ES EL LOGO -->
-
-			<a href="index.html">
-			<img src="MEDIA/logoUMDP.jpg" alt="" class="logo">
-			</a>
-
-			<!-- TITULOS -->
-			<div class="tituloEncabezado">
-				<h1>Un mundo de Princesas</h1>
-			</div>
-	<!-- REDES SOCIALES -->
-			<div class="rss">
-
-				<!-- ENLACE DE WHATSAPP -->
-				<div class="iconos">
-					 	<a href="https://wa.me/573114060044?text=Hola%20Bienvenid%40s%20a%20Chikiticas%20pero%20lindas%2C%20encantados%20de%20conocerte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20ayudarte%3F" target="_blank" rel="noopener noreferrer">
-					      <img src="MEDIA/whatsapp.png" alt="">
-						</a>
-
-			    <!-- ENLACE DE FACEBOOK -->
-			 
-					  	<img src="MEDIA/facebook.png" alt="">
-					  	<a href="https://www.facebook.com/profile.php?id=100086729575474&locale=es_ES" target="_blank" rel="noopener noreferrer">
-						</a>
-					   
-					    <!-- ENLACE DE INSTAGRAM -->
-					   
-					  	<a href="https://www.instagram.com/chikiticasperolindas?igsh=MW05enMzNTBtMmZ1NQ==" target="_blank" rel="noopener noreferrer">
-							<img src="MEDIA/instagram.png" alt="">
-						</a>
-				</div>
-	 		 </div>
-		</nav> 
-		
+    <header>
+        <?php include 'includes/header.php'; ?>
+    </header>
+    <section id="encabezado">
 
 	<!-- AQUI EMPIEZA EL MENU VERTICAL -->
 	<div id="infoP">
@@ -102,7 +68,7 @@
 
 		<div id="articuloP">
 			<div class="imagenP">
-				<img src="Media/IMG-Art_Principal.jpg" alt="">
+				<img src="<?php echo BASE_URL; ?>MEDIA/IMG-Art_Principal.jpg" alt="">
 				<a href="#Tendencias"></a>
 				<h2 class="subtituloEncabezado">Tendencias Otoño - Invierno<br>2024</h2>	
 			</div>		
@@ -111,7 +77,7 @@
 <!-- LINK DE TIENDA ONLINE -->			
 		<div id="tiendaOnline">
 			<div class="imgLinkTienda ">
-				<img src="Media/logoLPF.PNG" alt="">
+				<img src="<?php echo BASE_URL; ?>MEDIA/logoLPF.PNG" alt="">
 				<div id="infoTienda">
 					<a href="#tiendaOnline"></a>
 					<h2 class="tituloTienda">Visita nuestra<br>Tienda Online</h2>
@@ -120,7 +86,7 @@
 			</div>
 		</div>
 	</div>		
-	</header>
+	</section>
 
 
 	<section id="heroImage">
@@ -143,58 +109,58 @@
 			<h2 id="tituloArticulos">Articulos</h2>
 			<!-- ARTICULO 1	-->	
 
-			 <div class="contenedorArticulo" id="pestanaArticulo">
+			<div class="contenedorArticulo" id="pestanaArticulo">
 				
 						<div class="articulo ">
 							<div class="imagenArticulo ">
-								<img src="Media/art1.jpg" alt="">
+								<img src="<?php echo BASE_URL; ?>MEDIA/art1.jpg" alt="">
 							</div>
-							<a class="nombreArticulo" href="articulo1.html" >Ropa para fiesta y Ocasiones Especiales</a>
+							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo1.php">Ropa para fiesta y Ocasiones Especiales</a>
 						</div>
 
 			<!-- ARTICULO 2	 -->
 
 						<div class="articulo ">
 							<div class="imagenArticulo ">
-								<img src="Media/art2.jpeg" alt="">
+								<img src="<?php echo BASE_URL; ?>MEDIA/art2.jpeg" alt="">
 							</div>
-							<a class="nombreArticulo" href="articulo2.html" >Aprende a escoger la talla adecuada</a>
+							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo2.php">Aprende a escoger la talla adecuada</a>
 						</div>
 
 			<!-- ARTICULO 3	 -->
 
 						<div class="articulo ">
 							<div class="imagenArticulo ">
-								<img src="Media/art3.jpeg" alt="">
+								<img src="<?php echo BASE_URL; ?>MEDIA/art3.jpeg" alt="">
 							</div>
-							<a class="nombreArticulo" href="articulo3.html">España, superpotencia en moda infantil</a>
+							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo3.php">España, superpotencia en moda infantil</a>
 						</div>
 
 			<!-- ARTICULO 4	 -->
 
 						<div class="articulo ">
 							<div class="imagenArticulo ">
-								<img src="Media/art4.jpeg" alt="">
+								<img src="<?php echo BASE_URL; ?>MEDIA/art4.jpeg" alt="">
 							</div>
-							<a class="nombreArticulo" href="articulo4.html">Ropa infantil en expansion por Europa</a>
+							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo4.php">Ropa infantil en expansion por Europa</a>
 						</div>
 
 			<!--ARTICULO 5	-->
 
 						<div class="articulo ">
 							<div class="imagenArticulo ">
-								<img src="Media/art5.jpg" alt="">
+								<img src="<?php echo BASE_URL; ?>MEDIA/art5.jpg" alt="">
 							</div>
-							<a class="nombreArticulo" href="articulo5.html">Panorama actual de la Moda infantil</a>
+							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo5.php">Panorama actual de la Moda infantil</a>
 						</div>
 
 			<!--ARTICULO 6	-->
 
 						<div class="articulo ">
 							<div class="imagenArticulo ">
-								<img src="Media/art6.jpg" alt="">
+								<img src="<?php echo BASE_URL; ?>MEDIA/art6.jpg" alt="">
 							</div>
-							<a class="nombreArticulo" href="articulo6.html">¿Skincare para las niñas?como cuidar la piel infantil</a>
+							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo6.php">¿Skincare para las niñas?como cuidar la piel infantil</a>
 						</div>			
 			</div>
 		</section>
@@ -206,61 +172,63 @@
 
 			<!-- ARTICULO 7	-->	
 
-			 <div class="contenedorArticulo" id="pestanaArticulo">
+			<div class="contenedorArticulo" id="pestanaArticulo">
 
 						<div class="articulo ">
 							<div class="imagenArticulo ">
-								<img src="Media/art7.jpeg" alt="">
+								<img src="<?php echo BASE_URL; ?>MEDIA/art7.jpeg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="articulo7.html">Ropa para fiesta y Ocasiones Especiales</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo7.php">Ropa para fiesta y Ocasiones Especiales</a>
 						</div>
 
 			<!-- ARTICULO 8	 -->
 
 						<div class="articulo ">
 							<div class="imagenArticulo ">
-								<img src="Media/art8.jpeg" alt="">
+								<img src="<?php echo BASE_URL; ?>MEDIA/art8.jpeg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="articulo8.html">Aprende a escoger la talla adecuada</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo8.php">Aprende a escoger la talla adecuada</a>
 						</div>
 
 			<!-- ARTICULO 9	 -->
 
 						<div class="articulo ">
 							<div class="imagenArticulo ">
-								<img src="Media/art9.jpg" alt="">
+								<img src="<?php echo BASE_URL; ?>MEDIA/art9.jpg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="articulo9.html">España, superpotencia en moda infantil</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo9.php">España, superpotencia en moda infantil</a>
 						</div>
 
 			<!-- ARTICULO 10	 -->
 
 						<div class="articulo ">
 							<div class="imagenArticulo ">
-								<img src="Media/art10.jpg" alt="">
+								<img src="<?php echo BASE_URL; ?>MEDIA/art10.jpg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="articulo10.html" class="text">Ropa infantil en expansion por Europa</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo10.php" class="text">Ropa infantil en expansion por Europa</a>
 						</div>
 
 			<!--ARTICULO 11	-->
 
 						<div class="articulo ">
 							<div class="imagenArticulo ">
-								<img src="Media/art11.jpg" alt="">
+								<img src="<?php echo BASE_URL; ?>MEDIA/art11.jpg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="articulo11.html" class="text">Panorama actual de la Moda infantil</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo11.php" class="text">Panorama actual de la Moda infantil</a>
 						</div>
 
 			<!--ARTICULO 12	-->
 
 						<div class="articulo ">
 							<div class="imagenArticulo ">
-								<img src="Media/art12.jpg" alt="">
+								<img src="<?php echo BASE_URL; ?>MEDIA/art12.jpg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="articulo12.html" class="text">¿Skincare para las niñas?como cuidar la piel infantil?</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo12.php" class="text">¿Skincare para las niñas?como cuidar la piel infantil?</a>
 						</div>			
 			</div>
-			<a id ="verArticulo" href="Articulos/articulos.php" class="button">Ver Artículos</a>
+			<div class="contenedorBoton">
+				<a id="verArticulo" href="<?php echo BASE_URL; ?>Articulos/articulos.php" class="button">Ver Artículos</a>
+			</div>
 		</section>
 
 <!-- AQUI EMPIEZA LA SECCION DE LAS TENDENCIAS -->
@@ -272,7 +240,7 @@
 			<div class="contenedorTendencia">
 
 				<div class="columTendencia">
-					<img src="Media/tendencia1.jpeg" id="imgTendencia" alt="">
+					<img src="<?php echo BASE_URL; ?>MEDIA/tendencia1.jpeg" id="imgTendencia" alt="">
 				</div>
 
 				<div class="textoTendencia">
@@ -300,7 +268,7 @@
 			<div class="contenedorTendencia">
 
 				<div class="columTendencia">
-					<img src="Media/tendencia2.jpeg" id="imgTendencia" alt="">
+					<img src="<?php echo BASE_URL; ?>MEDIA/tendencia2.jpeg" id="imgTendencia" alt="">
 				</div>
 
 					<div class="textoTendencia">
@@ -326,7 +294,7 @@
 				<div id="contenedorConsejo">
 
 					<div class="imgConsejo">
-						<img src="Media/consejo1.jpeg" alt="">
+						<img src="<?php echo BASE_URL; ?>MEDIA/consejo1.jpeg" alt="">
 					</div>
 
 					<div class="txtConsejo">
@@ -357,7 +325,7 @@
 				<div id="contenedorConsejo">
 
 					<div class="imgConsejo">
-						<img src="Media/consejo2.jpeg" alt="">
+						<img src="<?php echo BASE_URL; ?>MEDIA/consejo2.jpeg" alt="">
 				</div>
 
 					<div class="txtConsejo">
@@ -387,7 +355,7 @@
 				<div id="contenedorConsejo">
 
 					<div class="imgConsejo">
-						<img src="Media/consejo3.jpeg" alt="">
+						<img src="<?php echo BASE_URL; ?>MEDIA/consejo3.jpeg" alt="">
 				</div>
 
 					<div class="txtConsejo">
@@ -440,20 +408,20 @@
 				<!-- ENLACE DE WHATSAPP -->
 				<div class="iconosPie">
 					 	<a href="https://wa.me/573114060044?text=Hola%20Bienvenid%40s%20a%20Chikiticas%20pero%20lindas%2C%20encantados%20de%20conocerte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20ayudarte%3F" target="_blank" rel="noopener noreferrer">
-					      <img src="MEDIA/whatsapp.png" alt="">
+					      <img src="<?php echo BASE_URL; ?>MEDIA/whatsapp.png" alt="">
 						</a>
 
 			    <!-- ENLACE DE FACEBOOK -->
 			 
-					  	<img src="MEDIA/facebook.png" alt="">
+					  	<img src="<?php echo BASE_URL; ?>MEDIA/facebook.png" alt="">
 					  	<a href="https://www.facebook.com/profile.php?id=100086729575474&locale=es_ES" target="_blank" rel="noopener noreferrer">
 						</a>
 					   
 					    <!-- ENLACE DE INSTAGRAM -->
 					   
 					  	<a href="https://www.instagram.com/chikiticasperolindas?igsh=MW05enMzNTBtMmZ1NQ==" target="_blank" rel="noopener noreferrer">
-							<img src="MEDIA/instagram.png" alt="">
-						</a>
+							<img src="<?php echo BASE_URL; ?>MEDIA/instagram.png" alt="">
+							</a>
 				</div>
 	 		 </div>
 
