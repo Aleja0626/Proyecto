@@ -416,7 +416,6 @@ nav {
 
 	width: 100%;
 	height: 1080px;
-	background-size: cover;
 	overflow: hidden;
 	background-color: #F3FFFA;
 }
@@ -679,12 +678,15 @@ nav {
 #formulario{
 
 	width: 100%;
-	height: 1080px;
+	height: 1080px; /* Cambia la altura a 1080px */
 	overflow: hidden;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Media/FondoFormulario.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: absolute;
+	padding: 50px 0; /* Añade padding superior e inferior */
+	position: relative; /* Cambia la posición a relative */
+	z-index: 1; /* Asegura que el formulario esté en el nivel correcto */
+	margin-bottom: 0; /* Asegura que no haya margen inferior */
 }
 
 
@@ -853,12 +855,12 @@ input {
 	color: #a50264;
 }
 
-/* ESTE ES EL PIE DE PAGINA / FOOTER */
+/* ESTE ES EL  DE PAGINA / FOOTER */
 #pie{
 
   width:100%;
   height:1080px;
-  padding-top: 850px;
+  padding-top: 1050px;
 
 }
 
@@ -900,4 +902,85 @@ input {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+/* FOOTER STYLES */
+#piePagina {
+    width: 100%;
+    height: auto;
+    background-color: #9b1616;
+    text-align: center;
+    position: relative; /* Asegura que el footer esté en el nivel correcto */
+    z-index: 0; /* Asegura que el footer esté en el nivel correcto */
+}
+
+.menuF {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #7e6767; /* Dark background color */
+    border-top: 5px solid #d151ad; /* Accent color */
+}
+
+.politicas {
+    margin: 10px;
+}
+
+.politicas a {
+    text-decoration: none;
+    color: #ffffff; /* White text color */
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.politicas a:hover {
+    color: #d151ad; /* Accent color on hover */
+}
+
+.rss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+	
+}
+
+.iconos img {
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+    filter: grayscale(100%); /* Grayscale effect */
+    transition: filter 0.3s ease;	
+}
+
+.iconos img:hover {
+    filter: none; /* Remove grayscale on hover */
+}
+
+/* FOOTER */
+#footer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative; /* Asegura que el footer esté en el nivel correcto */
+    z-index: 0; /* Asegura que el footer esté en el nivel correcto */
+    clear: both; /* Asegura que el footer no se superponga con otros elementos flotantes */
+    margin-top: 0; /* Asegura que no haya margen superior */
+}
+
+section {
+    margin-bottom: 0; /* Asegura que no haya margen inferior en las secciones */
+}
+
+body {
+    margin: 0; /* Asegura que no haya margen en el body */
+    padding: 0; /* Asegura que no haya padding en el body */
 }

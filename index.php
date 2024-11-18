@@ -11,7 +11,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 	<link rel="stylesheet" href="<?php echo BASE_URL; ?>CSS/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<script src="<?php echo BASE_URL; ?>JS/script.js"></script>
+	<script src="<?php echo BASE_URL; ?>public/js/script.js"></script>
 
 	<!-- LINK DE LAS FUENTES -->
 
@@ -31,17 +31,17 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 	
 	<!-- LISTA DE IMAGENES PRE-CARGADAS -->
 
-	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>MEDIA/Hero0.png">
-	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>MEDIA/Hero1.jpeg">
-	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>MEDIA/Hero2.jpg">
-	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>MEDIA/Hero3.jpeg">
-	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>MEDIA/Hero4.jpeg">
+	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>public/media/Hero0.png">
+	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>public/media/Hero1.jpeg">
+	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>public/media/Hero2.jpg">
+	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>public/media/Hero3.jpeg">
+	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>public/media/Hero4.jpeg">
 
 </head>
 
 <body>
     <header>
-        <?php include 'includes/header.php'; ?>
+        <?php include 'views/includes/header.php'; ?>
     </header>
     <section id="encabezado">
 
@@ -115,7 +115,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art1.jpg" alt="">
 							</div>
-							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo1.php">Ropa para fiesta y Ocasiones Especiales</a>
+							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo1.php">Ropa para fiesta y Ocasiones Especiales</a>
 						</div>
 
 			<!-- ARTICULO 2	 -->
@@ -124,7 +124,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art2.jpeg" alt="">
 							</div>
-							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo2.php">Aprende a escoger la talla adecuada</a>
+							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo2.php">Aprende a escoger la talla adecuada</a>
 						</div>
 
 			<!-- ARTICULO 3	 -->
@@ -133,7 +133,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art3.jpeg" alt="">
 							</div>
-							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo3.php">España, superpotencia en moda infantil</a>
+							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo3.php">España, superpotencia en moda infantil</a>
 						</div>
 
 			<!-- ARTICULO 4	 -->
@@ -142,7 +142,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art4.jpeg" alt="">
 							</div>
-							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo4.php">Ropa infantil en expansion por Europa</a>
+							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo4.php">Ropa infantil en expansion por Europa</a>
 						</div>
 
 			<!--ARTICULO 5	-->
@@ -151,7 +151,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art5.jpg" alt="">
 							</div>
-							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo5.php">Panorama actual de la Moda infantil</a>
+							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo5.php">Panorama actual de la Moda infantil</a>
 						</div>
 
 			<!--ARTICULO 6	-->
@@ -160,7 +160,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art6.jpg" alt="">
 							</div>
-							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo6.php">¿Skincare para las niñas?como cuidar la piel infantil</a>
+							<a class="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo6.php">¿Skincare para las niñas?como cuidar la piel infantil</a>
 						</div>			
 			</div>
 		</section>
@@ -178,7 +178,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art7.jpeg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo7.php">Ropa para fiesta y Ocasiones Especiales</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo7.php">Ropa para fiesta y Ocasiones Especiales</a>
 						</div>
 
 			<!-- ARTICULO 8	 -->
@@ -187,7 +187,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art8.jpeg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo8.php">Aprende a escoger la talla adecuada</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo8.php">Aprende a escoger la talla adecuada</a>
 						</div>
 
 			<!-- ARTICULO 9	 -->
@@ -196,7 +196,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art9.jpg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo9.php">España, superpotencia en moda infantil</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo9.php">España, superpotencia en moda infantil</a>
 						</div>
 
 			<!-- ARTICULO 10	 -->
@@ -205,7 +205,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art10.jpg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo10.php" class="text">Ropa infantil en expansion por Europa</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo10.php" class="text">Ropa infantil en expansion por Europa</a>
 						</div>
 
 			<!--ARTICULO 11	-->
@@ -214,7 +214,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art11.jpg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo11.php" class="text">Panorama actual de la Moda infantil</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo11.php" class="text">Panorama actual de la Moda infantil</a>
 						</div>
 
 			<!--ARTICULO 12	-->
@@ -223,11 +223,11 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art12.jpg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo12.php" class="text">¿Skincare para las niñas?como cuidar la piel infantil?</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo12.php" class="text">¿Skincare para las niñas?como cuidar la piel infantil?</a>
 						</div>			
 			</div>
 			<div class="contenedorBoton">
-				<a id="verArticulo" href="<?php echo BASE_URL; ?>Articulos/articulos.php" class="button">Ver Artículos</a>
+				<a id="verArticulo" href="<?php echo BASE_URL; ?>views/articulos.php" class="button">Ver Artículos</a>
 			</div>
 		</section>
 
@@ -401,34 +401,10 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 			<button id="bottonCerrarMContacto" onclick="cerrarModalC()">Entendido</button>
 		</div>
 	</div>
-<footer id="pie">
-		
-		<div id="rssPie">
 
-				<!-- ENLACE DE WHATSAPP -->
-				<div class="iconosPie">
-					 	<a href="https://wa.me/573114060044?text=Hola%20Bienvenid%40s%20a%20Chikiticas%20pero%20lindas%2C%20encantados%20de%20conocerte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20ayudarte%3F" target="_blank" rel="noopener noreferrer">
-					      <img src="<?php echo BASE_URL; ?>MEDIA/whatsapp.png" alt="">
-						</a>
-
-			    <!-- ENLACE DE FACEBOOK -->
-			 
-					  	<img src="<?php echo BASE_URL; ?>MEDIA/facebook.png" alt="">
-					  	<a href="https://www.facebook.com/profile.php?id=100086729575474&locale=es_ES" target="_blank" rel="noopener noreferrer">
-						</a>
-					   
-					    <!-- ENLACE DE INSTAGRAM -->
-					   
-					  	<a href="https://www.instagram.com/chikiticasperolindas?igsh=MW05enMzNTBtMmZ1NQ==" target="_blank" rel="noopener noreferrer">
-							<img src="<?php echo BASE_URL; ?>MEDIA/instagram.png" alt="">
-							</a>
-				</div>
-	 		 </div>
-
-	</footer>
-		</section>
-
-
-	
+	</section>
+	<footer id="footer">
+        <?php include 'views/includes/footer.php'; ?>
+    </footer>
 </body>
 </html>
