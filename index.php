@@ -54,9 +54,9 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 					<li class="elementoMenu"><a href="#tendUno"onclick="">Tendencias</li>
 					<li class="elementoMenu"><a href="#consejoUno"onclick="">Consejos</li>
 						<ul id="submenu">
-							<li class="elemSubMenu"><a href="#ConsejoUno"></a>Moda</li>
-							<li class="elemSubMenu"><a href="#consejoDos"></a>Aprende de Colorimetria</li>
-							<li class="elemSubMenu"><a href="#ConsejoTres"></a>Eventos</li>
+							<li class="elemSubMenu"><a href="#ConsejoUno" onclick=""></a>Moda</li>
+							<li class="elemSubMenu"><a href="#consejoDos" onclick=""></a>Aprende de Colorimetria</li>
+							<li class="elemSubMenu"><a href="#ConsejoTres" onclick=""></a>Eventos</li>
 						</ul>
 					<li class="elementoMenu"><a id="titTienda" href="https://darkorchid-badger-317144.hostingersite.com/"  target="_blank">Visita nuestra Tienda Online</li>
 					<li class="elementoMenu"><a href="#formulario">Inscribete y recibe novedades</li>
@@ -246,16 +246,19 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 				</div>
 
 				<div class="textoTendencia">
-					<p>
-						"Somos una tienda de ropa exclusiva para niñas brindando a sus clientas altos estándares de calidad.
-						Especializados en vestidos para cumpleaños y ocasiones especiales.
-						<br></br>
-						Estamos a la vanguardia de la moda infantil, tendencias.
-						Fomentamos valores positivos y una cultura de autoestima saludable entre las niñas, enseñándoles a expresarse a través de la moda y la creatividad, y contribuyendo así a su desarrollo integral.
-						<br></br>		
-						Nos aseguramos de la durabilidad de las prendas y estamos comprometidos con la sostenibilidad en los procesos de producción y distribución, contribuyendo así al cuidado del medio ambiente "
-						
-					</p>
+				<ul>
+					<li><strong>Sostenibilidad:</strong> Los productos ecológicos están ganando popularidad. Desde juguetes hasta ropa, hay una creciente demanda de artículos fabricados con materiales reciclados, biodegradables y no tóxicos.</li>
+					
+					<li><strong>Tecnología y Educación:</strong> La integración de la tecnología sigue siendo una tendencia fuerte, con un enfoque en juguetes interactivos y aplicaciones educativas.</li>
+					
+					<li><strong>Personalización:</strong> Los padres buscan productos únicos para sus hijos. Desde ropa hasta juguetes, la personalización (con nombres, colores y diseños exclusivos) está en auge.</li>
+					
+					<li><strong>Diversidad e Inclusión:</strong> Se están diseñando productos que reflejan una mayor diversidad en cuanto a etnias, géneros y habilidades. Esto promueve la inclusión desde la infancia.</li>
+					
+					<li><strong>Moda Infantil:</strong> La moda para niños sigue influenciada por las tendencias de adultos, pero con un toque práctico y lúdico. Se prioriza los colores vibrantes y estampados divertidos.</li>
+					
+					<li><strong>Fomento de la Creatividad:</strong> Juguetes y juegos que estimulan la imaginación y el juego libre están en auge.Promueven el aprendizaje por su capacidad para desarrollar habilidades cognitivas y creativas.</li>
+				</ul>
 				</div>
 			</div>
 		</section>
@@ -272,18 +275,20 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 				<div class="columTendencia">
 					<img src="<?php echo BASE_URL; ?>MEDIA/tendencia2.jpeg" id="imgTendencia" alt="">
 				</div>
-
+					<br>
 					<div class="textoTendencia">
-						<p>
-							"Somos una tienda de ropa exclusiva para niñas brindando a sus clientas altos estándares de calidad.
-							Especializados en vestidos para cumpleaños y ocasiones especiales.
-							<br></br>
-							Estamos a la vanguardia de la moda infantil, tendencias.
-							Fomentamos valores positivos y una cultura de autoestima saludable entre las niñas, enseñándoles a expresarse a través de la moda y la creatividad, y contribuyendo así a su desarrollo integral.
-							<br></br>		
-							Nos aseguramos de la durabilidad de las prendas y estamos comprometidos con la sostenibilidad en los procesos de producción y distribución, contribuyendo así al cuidado del medio ambiente "
-							
-						</p>
+					<p>Las tendencias del 2024 según expertos en diseño y moda, reflejan equilibrio entre la naturaleza y la tecnología.</p>
+					<ul>
+						<li><strong>Tonos Naturales y Terrosos:</strong> Colores como el terracota, verde oliva y marrones suaves siguen siendo protagonistas. Estos tonos de conexión profundos con la naturaleza y aportan calidez y serenidad.</li>
+						
+						<li><strong>Colores Pastel Modernos:</strong> Los pasteles no pasan de moda. Colores como el lavanda, el rosa suave y el azul claro siguen siendo populares, pero con un giro moderno: combina con metálicos o tonos más vibrantes.</li>
+						
+						<li><strong>Colores Vibrantes y Energéticos:</strong> En contraste con los tonos naturales, los colores vivos como el fucsia, naranja brillante y amarillo eléctrico aportan energía y optimismo.</li>
+						
+						<li><strong>Azul Cósmico:</strong> El azul profundo, casi cósmico, se destaca como el color del futuro. Este tono, cercano al azul marino pero con un matiz más vibrante, simboliza estabilidad, confianza y modernidad.</li>
+						
+						<li><strong>Neutros con Toques Metálicos:</strong> Los tonos neutros como el gris, blanco y beige continúan siendo una base fundamental, pero este año se mezclan con detalles metálicos, como el dorado o plateado.</li>
+					</ul>
 					</div>
 			</div>
 		</section>
@@ -301,14 +306,14 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 
 					<div class="txtConsejo">
 						<p>
-							"Somos una tienda de ropa exclusiva para niñas brindando a sus clientas altos estándares de calidad.
-							Especializados en vestidos para cumpleaños y ocasiones especiales.
-							<br></br>
-							Estamos a la vanguardia de la moda infantil, tendencias.
-							Fomentamos valores positivos y una cultura de autoestima saludable entre las niñas, enseñándoles a expresarse a través de la moda y la creatividad, y contribuyendo así a su desarrollo integral.
-							<br></br>		
-							Nos aseguramos de la durabilidad de las prendas y estamos comprometidos con la sostenibilidad en los procesos de producción y distribución, contribuyendo así al cuidado del medio ambiente "
-							
+							"La moda infantil para 2024 se enfoca en un equilibrio entre estilo, comodidad y sostenibilidad. 
+							<br>
+							Los diseños se adaptan a las necesidades de los más pequeños, ofreciendo prendas que permiten la libertad de
+							movimiento sin sacrificar el aspecto visual. A su vez, las marcas están cada vez más comprometidas con la 
+							conciencia ecológica, utilizando materiales orgánicos y procesos de fabricación responsables. 
+							<br>
+							Este año, las tendencias apuestan por colores vibrantes, estampados creativos y un enfoque inclusivo, 
+							donde la funcionalidad y el confort siguen siendo prioritarios."
 						</p>
 					</div>
 				</div>
@@ -332,18 +337,19 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 
 					<div class="txtConsejo">
 						<p>
-							"Somos una tienda de ropa exclusiva para niñas brindando a sus clientas altos estándares de calidad.
-							Especializados en vestidos para cumpleaños y ocasiones especiales.
-							<br></br>
-							Estamos a la vanguardia de la moda infantil, tendencias.
-							Fomentamos valores positivos y una cultura de autoestima saludable entre las niñas, enseñándoles a expresarse a través de la moda y la creatividad, y contribuyendo así a su desarrollo integral.
-							<br></br>		
-							Nos aseguramos de la durabilidad de las prendas y estamos comprometidos con la sostenibilidad en los procesos de producción y distribución, contribuyendo así al cuidado del medio ambiente "
-							
+							"La colorimetría, en el contexto de la moda infantil, juega un papel crucial 
+							no solo en la estética de las prendas, sino también en el bienestar y el 
+							desarrollo emocional de los niños. La selección y combinación de colores en la 
+							ropa infantil puede influir en el estado de ánimo, la percepción social e incluso
+							 en el aprendizaje de los más pequeños.
+							 <br>
+							 Al igual que en la moda adulta,los colores en la ropa de los niños tienen un poder significativo, pero en su
+							  caso, la elección de los tonos también debe tener en cuenta la comodidad, 
+							  la psicología infantil y las tendencias estacionales."
 						</p>
 					</div>
 					<div class ="verConsejo">
-						<a href="consejo2.php" class="button">Link</a>	
+						<a href="views/consejos/consejo2.php" class="button">Link</a>	
 					</div>	
 		</section>
 
@@ -362,18 +368,18 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 
 					<div class="txtConsejo">
 						<p>
-							"Somos una tienda de ropa exclusiva para niñas brindando a sus clientas altos estándares de calidad.
-							Especializados en vestidos para cumpleaños y ocasiones especiales.
-							<br></br>
-							Estamos a la vanguardia de la moda infantil, tendencias.
-							Fomentamos valores positivos y una cultura de autoestima saludable entre las niñas, enseñándoles a expresarse a través de la moda y la creatividad, y contribuyendo así a su desarrollo integral.
-							<br></br>		
-							Nos aseguramos de la durabilidad de las prendas y estamos comprometidos con la sostenibilidad en los procesos de producción y distribución, contribuyendo así al cuidado del medio ambiente "
-							
+							"El evento BabyKid Spain + FIMI se ha consolidado como uno de los encuentros
+							 más importantes para el sector infantil y juvenil en España. Esta cita, que reúne a marcas,
+							  fabricantes, diseñadores y profesionales de la industria, se ha convertido en una plataforma
+							   clave para mostrar las últimas tendencias en moda infantil, juguetes, productos para el 
+							   cuidado del bebé y todo lo relacionado con el mundo de la infancia.
+							   <br>
+							    Además de ofrecer una visión completa del mercado, el evento se presenta como un punto de encuentro para la innovación,
+							    el networking y el desarrollo de nuevas oportunidades de negocio. BabyKid Spain + FIMI atrae a miles de visitantes cada año,"
 						</p>
 					</div>
 					<div class ="verConsejo">
-						<a href="consejo3.php" class="button">Link</a>	
+						<a href="views/consejos/consejo3.php" class="button">Link</a>	
 					</div>	
 		</section>
 <!-- AQUI EMPIEZA EL FORMULARIO -->		

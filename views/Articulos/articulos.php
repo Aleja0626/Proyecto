@@ -268,7 +268,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 		</section> 
     </div>
     <footer>
-        <?php include '../includes/footer.php'; ?>
+        <?php include '/includes/footer.php'; ?>
     </footer>
 </body>
 </html>

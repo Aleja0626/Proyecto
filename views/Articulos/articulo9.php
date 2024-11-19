@@ -1,18 +1,28 @@
+<?php
+define('BASE_URL', 'http://localhost/Proyecto/');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articulos</title>
+	<link rel="stylesheet" href="<?php echo BASE_URL; ?>CSS/style.css">
 </head>
 <body>
-    <header id="encabezado">
-        <div>
-            
-        </div>
-
+    <header>
+        <?php include '../includes/header.php'; ?>
     </header>
-    <h1>Pagina de Articulos</h1>
-    <p>En mantenimiento</p>
+    <h1>articulo 9</h1>
+    <br>
+    <br>
+    <br>
+    <p>PAGINA EN MANTENIMIENTO</p>
+    <br>
+    <br>
+    <br>
+    <footer>
+    <?php include '../includes/footer.php'; ?>
+    </footer>
 </body>
 </html>

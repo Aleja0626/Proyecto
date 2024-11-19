@@ -6,14 +6,14 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>articulos</title>
+    <title>Consejos</title>
 	<link rel="stylesheet" href="<?php echo BASE_URL; ?>CSS/style.css">
 </head>
 <body>
     <header>
         <?php include '../includes/header.php'; ?>
     </header>
-    <h1>ARTICULO 2</h1>
+    <h1>CONSEJO 2</h1>
     <br>
     <br>
     <br>
