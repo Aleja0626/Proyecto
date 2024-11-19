@@ -58,7 +58,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<li class="elemSubMenu"><a href="#consejoDos"></a>Aprende de Colorimetria</li>
 							<li class="elemSubMenu"><a href="#ConsejoTres"></a>Eventos</li>
 						</ul>
-					<li class="elementoMenu"><a id="titTienda" href="#tiendaOnline">Visita nuestra Tienda Online</li>
+					<li class="elementoMenu"><a id="titTienda" href="https://darkorchid-badger-317144.hostingersite.com/"  target="_blank">Visita nuestra Tienda Online</li>
 					<li class="elementoMenu"><a href="#formulario">Inscribete y recibe novedades</li>
 				</ul> 
 		</nav>
@@ -68,21 +68,23 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 
 		<div id="articuloP">
 			<div class="imagenP">
-				<img src="<?php echo BASE_URL; ?>MEDIA/IMG-Art_Principal.jpg" alt="">
-				<a href="#Tendencias"></a>
-				<h2 class="subtituloEncabezado">Tendencias Otoño - Invierno<br>2024</h2>	
+				<a href="#tendUno">
+					<img src="<?php echo BASE_URL; ?>MEDIA/IMG-Art_Principal.jpg" alt="">
+					<h2 class="subtituloEncabezado">Tendencias Otoño - Invierno<br>2024</h2>
+				</a>
 			</div>		
 		</div>
 
 <!-- LINK DE TIENDA ONLINE -->			
 		<div id="tiendaOnline">
 			<div class="imgLinkTienda ">
-				<img src="<?php echo BASE_URL; ?>MEDIA/logoLPF.PNG" alt="">
-				<div id="infoTienda">
-					<a href="#tiendaOnline"></a>
-					<h2 class="tituloTienda">Visita nuestra<br>Tienda Online</h2>
-				</div>
-				</a>	
+					<a href="https://darkorchid-badger-317144.hostingersite.com/" target="_blank">
+							<img src="<?php echo BASE_URL; ?>MEDIA/logoLPF.PNG" alt="">		
+						<div id="infoTienda">
+					
+							<h2 class="tituloTienda">Visita nuestra<br>Tienda Online</h2>	
+						</div>	
+					</a>	
 			</div>
 		</div>
 	</div>		
@@ -232,7 +234,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 		</section>
 
 <!-- AQUI EMPIEZA LA SECCION DE LAS TENDENCIAS -->
-		<section id="tendUno">
+		<section id="tendUno" >
 				
 				<h2 id="tituloTendencia">Tendencias 2024</h2>
 				<h3 class="titSeccionTen">Tendencia infantil según ASEPRI</h3>
@@ -311,7 +313,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 					</div>
 				</div>
 				<div class ="verConsejo">
-					<a href="consejos.html" class="button">Link</a>	
+					<a href="views/consejos/consejo1.php" class="button">Link</a>	
 				</div>	
 				
 		</section>
@@ -341,7 +343,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 						</p>
 					</div>
 					<div class ="verConsejo">
-						<a href="consejos.html" class="button">Link</a>	
+						<a href="consejo2.php" class="button">Link</a>	
 					</div>	
 		</section>
 
@@ -371,13 +373,45 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 						</p>
 					</div>
 					<div class ="verConsejo">
-						<a href="consejos.html" class="button">Link</a>	
+						<a href="consejo3.php" class="button">Link</a>	
 					</div>	
 		</section>
+<!-- AQUI EMPIEZA EL FORMULARIO -->		
+		<section id="formulario">
+		<form id="formu" action="procesarFormulario.php" method="POST" data-aos="zoom-out-down">
+        <p id="textoForm">¡Entérate de las últimas tendencias!</p>
+        <input id="formNombre" type="text" name="Nombre" placeholder="Escribe tu Nombre y Apellidos" required>
+        <input id="formCorreo" type="email" name="Correo" placeholder="Escribe tu Email" required>
+        <input id="botonEnviar" value="Suscríbete" type="submit" onclick="enviarFormulario()">
+    </form>
+</section>
+
+<!-- MODAL DE CONTACTO -->
+<div id="modalContacto" class="modal" style="display: none;">
+    <div class="modal-content">
+       
+		<?php
+                // Mostrar mensaje de éxito si se ha enviado correctamente
+                if (isset($_GET['success']) && $_GET['success'] == 1) {
+					echo  '<p class="mensajeC">Querido Usuario:</p>';
+					?>
+					<br>
+					<?php
+                    echo '<p class="mensajeC">¡Gracias por suscribirte!</p>';
+                } elseif (isset($_GET['error']) && $_GET['error'] == 1) {
+                    echo "Hubo un error al procesar tu solicitud. Inténtalo de nuevo.";
+                }
+            ?>
+			<br>
+			
+        <button id="bottonCerrarMContacto" onclick="cerrarModal()" class="btnCerrar">Entendido</button>
+		<footer>
+			<?php include 'views/includes/footer.php'; ?>
+		</footer>
+    </div>
+</div>
 		
-	<footer id="footer">
-        <?php include 'views/includes/footer.php'; ?>
-    </footer>
+
 </body>
 
 </html>

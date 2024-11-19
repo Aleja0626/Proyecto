@@ -5,11 +5,11 @@ function heroSlideShow(){
 
 	let listImgHero = [
 
-		"url('public/media/Hero0.png')",
-		"url('public/media/Hero1.jpeg')",
-		"url('public/media/Hero2.jpg')",
-		"url('public/media/Hero3.jpeg')",
-		"url('public/media/Hero4.jpeg')"
+		"url('MEDIA/Hero0.png')",
+		"url('MEDIA/Hero1.jpeg')",
+		"url('MEDIA/Hero2.jpg')",
+		"url('MEDIA/Hero3.jpeg')",
+		"url('MEDIA/Hero4.jpeg')"
 
 		];
 
@@ -70,53 +70,28 @@ function imagenSalienteAnim() {
 
 // MODAL PARA ENVIAR LA CONFIRMACION DEL FORMULARIO
 
-function modalContacto() {
-	document.getElementById("modalContacto").style.display="block";
-	document.documentElement.style.overflow="hidden";
+// Mostrar el modal después de la recarga si hay un mensaje de éxito o error
+window.onload = function() {
+    var success = new URLSearchParams(window.location.search).get('success');
+    var error = new URLSearchParams(window.location.search).get('error');
+    
+    // Si se obtuvo el parámetro 'success=1', mostrar el modal con éxito
+    if (success === "1") {
+        document.getElementById("modalContacto").style.display = "block";
+        document.documentElement.style.overflow = "hidden";  // Deshabilitar el desplazamiento
+    }
+    
+    // Si se obtuvo el parámetro 'error=1', mostrar el modal con error
+    if (error === "1") {
+        document.getElementById("modalContacto").style.display = "block";
+        document.documentElement.style.overflow = "hidden";  // Deshabilitar el desplazamiento
+    }
+};
 
-	let nombre = document.getElementById("formNombre").value;
-	let email = document.getElementById("formCorreo").value;
-
-	let mensaje;
-
-	(function formCheck(){
-
-		if (!document.getElementById("formCorreo").checkValidity() && !document.getElementById("formNombre").checkValidity()){
-			mensaje = "Aún no haz ingresado tus datos.";
-			document.getElementById("mensajeC").innerHTML = mensaje;
-		}
-
-		else if(!document.getElementById("formNombre").checkValidity()){
-			mensaje = "No haz ingresado tu Nombre correctamente";
-			document.getElementById("mensajeC").innerHTML = mensaje;
-		}
-
-		else if (!document.getElementById("formCorreo").checkValidity()){
-			mensaje = "Datos Incorrectos<br>Verifica que el correo electrónico este escrito correctamente";
-			document.getElementById("mensajeC").innerHTML = mensaje;
-		}
-		
-		else {
-
-			mensaje = nombre + "<br>"+" Muchas gracias por suscribirte!";
-
-			document.getElementById("mensajeC").innerHTML = mensaje;
-
-			//LINEA PARA PODER CERRAR EL MODAL CONTACTO CON EL TABULADOR
-			document.getElementById("bottonCerrarMContacto").focus();
-		}	
-
-	})();
-}
-
-// FUNCION QUE NOS PERMITE CERRAR EL MODAL DEL FORMULARIO
-function cerrarModalC(){
-	document.getElementById("modalContacto").style.display="none";
-	document.documentElement.style.overflow="auto";
-
-	document.getElementById("formNombre").value="";
-	document.getElementById("formCorreo").value="";
-
+// Función para cerrar el modal
+function cerrarModal() {
+    document.getElementById("modalContacto").style.display = "none";
+    document.documentElement.style.overflow = "auto";  // Habilitar el desplazamiento
 }
 
 // Iniciar la animación del slideshow

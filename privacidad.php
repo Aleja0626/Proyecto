@@ -12,7 +12,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 </head>
 <body>
     <header>
-        <?php include 'includes/header.php'; ?>
+    <?php include 'views/includes/header.php'; ?>
     </header>
   
     <div class="container">
@@ -92,7 +92,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
             <p>Asimismo, se hace saber a los usuarios que pueden retirar el consentimiento para el tratamiento de sus datos en cualquier momento, así como que pueden presentar reclamación ante la Autoridad de Control (Agencia Española de Protección de Datos) de considerarlo oportuno.</p>
         </section>
         <footer>
-        <?php include 'includes/footer.php'; ?>
+        <?php include 'views/includes/footer.php'; ?>
         </footer>
     </div>    
 </body>

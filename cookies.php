@@ -12,7 +12,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 </head>
 <body>
     <header>
-        <?php include 'includes/header.php'; ?>
+        <?php include 'views/includes/header.php'; ?>
     </header>
     <div class="container">
 
@@ -50,7 +50,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
             <p>Usted puede restringir, bloquear o borrar las cookies de la web de unmundodeprincesas.com o cualquier otra página web utilizando su navegador. En cada navegador la operativa es diferente, la función de “Ayuda” le mostrará cómo hacerlo.</p>
         </div>
         <footer>
-        <?php include 'includes/footer.php'; ?>
+        <?php include 'views/includes/footer.php'; ?>
         </footer>
     </div>    
 </body>
