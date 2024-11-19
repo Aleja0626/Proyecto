@@ -28,7 +28,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
             <h2 id="tituloTendencia">Ropa para fiesta y Ocasiones Especiales</h2>
             <div class="contenedorTendencia">
                 <div class="columTendencia">
-                    <img src="../MEDIA/seccionArticulos/articulo1.jpg" id="imgTendencia" alt="">
+                    <img src="<?php echo BASE_URL; ?>public/media/tendencia1.jpeg" id="imgTendencia" alt="">
                 </div>
                 <div class="textoTendencia">
                     <p>
@@ -268,7 +268,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 		</section> 
     </div>
     <footer>
-    <?php include '../includes/footer.php'; ?>
+        <?php include '../includes/footer.php'; ?>
     </footer>
 </body>
 </html>
