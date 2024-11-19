@@ -178,7 +178,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art7.jpeg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo7.php">Ropa para fiesta y Ocasiones Especiales</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo7.php">La Moda Infantil de Segunda Mano: Ventajas y Consejos</a>
 						</div>
 
 			<!-- ARTICULO 8	 -->
@@ -187,7 +187,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art8.jpeg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo8.php">Aprende a escoger la talla adecuada</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo8.php">Cómo Organizar el Armario Infantil: Consejos.</a>
 						</div>
 
 			<!-- ARTICULO 9	 -->
@@ -214,7 +214,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art11.jpg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo11.php" class="text">Panorama actual de la Moda infantil</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo11.php" class="text">Ropa Infantil sostenible: Cómo Escoger Prendas Ecológicas</a>
 						</div>
 
 			<!--ARTICULO 12	-->
@@ -223,7 +223,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art12.jpg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo12.php" class="text">¿Skincare para las niñas?como cuidar la piel infantil?</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>Articulos/articulo12.php" class="text">Tendencias en Calzado Infantil</a>
 						</div>			
 			</div>
 			<div class="contenedorBoton">
@@ -377,30 +377,38 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 
 
 		<section id="formulario">
+		<form id="formu" action="procesarFormulario.php" method="POST" data-aos="zoom-out-down">
+        <p id="textoForm">¡Entérate de las últimas tendencias!</p>
+        <input id="formNombre" type="text" name="Nombre" placeholder="Escribe tu Nombre y Apellidos" required>
+        <input id="formCorreo" type="email" name="Correo" placeholder="Escribe tu Email" required>
+        <input id="botonEnviar" value="Suscríbete" type="submit" onclick="enviarFormulario()">
+    </form>
+</section>
+
+<!-- MODAL DE CONTACTO -->
+<div id="modalContacto" class="modal" style="display: none;">
+    <div class="modal-content">
+       
+		<?php
+                // Mostrar mensaje de éxito si se ha enviado correctamente
+                if (isset($_GET['success']) && $_GET['success'] == 1) {
+					echo  '<p class="mensajeC">Querido Usuario:</p>';
+					?>
+					<br>
+					<?php
+                    echo '<p class="mensajeC">¡Gracias por suscribirte!</p>';
+                } elseif (isset($_GET['error']) && $_GET['error'] == 1) {
+                    echo "Hubo un error al procesar tu solicitud. Inténtalo de nuevo.";
+                }
+            ?>
+			<br>
 			
-			<form action="#" id="formu" data-aos="zoom-out-down">
+        <button id="bottonCerrarMContacto" onclick="cerrarModal()" class="btnCerrar">Entendido</button>
+    </div>
+</div>
 
 
-				<p id="textoForm" >¡Entèrate de las ùltimas tendencias!</p>
-
-				<input id="formNombre" type="text" name ="Nombre" placeholder="Escribe tu Nombres y Apellidos" required>
-
-				<input id="formCorreo" type="Email" name ="Correo" placeholder="Escribe tu Email" required>
-
-				<input id ="botonEnviar" onclick="modalContacto()" Value="Suscríbete" type="button">
-
-
-			</form>
-
-		<!-- MODAL DE CONTACTO -->
-
-	<div id="modalContacto">
-		<div id="modalBoxC">
-			<h1>Querido Usuario:</h1>
-			<h2 id="mensajeC">¡Gracias por suscribirte!</h2>
-			<button id="bottonCerrarMContacto" onclick="cerrarModalC()">Entendido</button>
-		</div>
-	</div>
+	<!-- PIE DE PAGINA -->
 <footer id="pie">
 		
 		<div id="rssPie">
@@ -427,8 +435,6 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 
 	</footer>
 		</section>
-
-
-	
 </body>
+
 </html>

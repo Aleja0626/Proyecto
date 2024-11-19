@@ -423,7 +423,6 @@ nav {
 
 #verArticulo {
     width: 365px;
-    height: 120px;
     background-color: #55EDE4;
     color: white;
     font-size: 2rem;
@@ -446,6 +445,40 @@ nav {
 	background-color: #ffffff;
 	color: #a50264;
 
+}
+
+.articulos{
+
+	width: 100%;
+	height: 1080px;
+}
+
+.articulosC{
+
+	width: 100%;
+	height: 1080px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-color: #a3bcdd;
+}
+
+#pPrincipal> h1{
+
+	margin-top: 150px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-family: "Edu VIC WA NT Beginner, medium", sans-serif;
+	font-size: 3.5rem;
+	color: #BA5E09;
+}
+
+#pPrincipal> img{
+
+	width: 1047px;
+	height: 712px;
+	border-radius: 20px;
+	margin-top: 25px;
 }
 
 /* SECCION TENDENCIA UNO*/
@@ -778,30 +811,42 @@ input {
 
 #modalContacto{
 
-	z-index: -1;
+	z-index: 1;
 }
 
-#modalBoxC {
+.modal {
+    display: none; /* Inicialmente, el modal está oculto */
+    position: fixed;
+    z-index: 1; /* Asegurarse de que el modal está encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */
+    padding-top: 60px;
+}
 
-	width: 700px;
-	height: 350px;
-	background-color: rgba(0, 0, 0, 0.6);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+.modal-content {
+	
+	background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */
+	margin: 5% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 60%;
 	text-align: center;
-	padding: 55px;
-	border-radius: 50px;
-	border: white 5px solid;
-	z-index:auto;
 
+}
+
+.mensajeC{
+
+	font-size: 1.7rem;
+	color: #CAECF0;
 
 }
 
 /* DISEÑO DEL TEXTO DEL MODAL CONTACTO */
 
-#modalBoxC> h1 {
+.modal-content> h1 {
 
 	font-size: 2.4rem;
 	color: white;
@@ -811,7 +856,7 @@ input {
 	font-weight: normal;
 }
 
-#modalBoxC> h2 {
+.modal-content> h2 {
 
 	font-size: 1.5rem;
 	color: white;
@@ -825,7 +870,7 @@ input {
 
 /* DISEÑO DEL BOTON DEL MODAL CONTACTO */
 
-#modalBoxC> button {
+.btnCerrar {
 
 
 	font-size: 1.7rem;
@@ -838,14 +883,14 @@ input {
 	margin-top: 40px;
 	border-radius: 30px;
 	border:white 1px solid;
-
+	transition: background-color 0.3s ease;
 
 }
 
 /* HOVER DEL BOTON MODAL DE CONTACTO */
 
 
-#modalBoxC> button:hover{
+.btnCerrar:hover{
 
 	border-style: solid;
 	border-color: #610952;
@@ -857,9 +902,23 @@ input {
 #pie{
 
   width:100%;
-  height:1080px;
-  padding-top: 850px;
+  height:220px;
+  padding-top: 50px;
 
+}
+
+.politicas{
+
+	margin-top: 50px;	
+	margin-left: 30px;
+}
+
+.politicas> a{
+
+	margin-left: 30px;
+	font-size: 1.7rem;
+	text-decoration: none;
+	
 }
 
 #rssPie{
@@ -867,7 +926,7 @@ input {
 	width: 100%;
 	height: auto;
 	overflow: hidden;
-	margin-left: 200px;
+	margin-left: 800px;
 	padding-top: 25px;
 	text-align: center;
 
@@ -880,6 +939,8 @@ input {
 	float: left;
 	margin: 33px 33px;
 	margin-top: 50px;
+	padding-left: 700PX;
+	margin-left: 50px;
 }
 
 .iconosPie img {
@@ -888,10 +949,31 @@ input {
 	height:105px;
 	margin-bottom: 25px;
 	margin: auto;
+	margin-left: 50px;
+}
+
+#titPoliticas{
+
+	margin-bottom: 80px;
+	font-size: 2rem;
+	font-family: "Edu VIC WA NT Beginner", cursive;
+	color: #a50264;
+	text-align: center;
+}
+
+
+.txtPoliticas{
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 20px;
+	font-family: "nunito", cursive;
+	font-size: 2rem;
+	color: #363636;
+
 }
 
 .button {
-    background-color: #f0f0f0;
     border: none;
     padding: 10px 20px;
     text-align: center;
