@@ -29,6 +29,16 @@ class bibliotecaBD {
         }
     }
 
+    // Método para ejecutar consultas y devolver resultados
+    public static function consulta($consulta) {
+        $conexion = self::conexionBD();
+        $resultado = $conexion->query($consulta);
+        if ($resultado === false) {
+            die("Error en la consulta: " . $conexion->error);
+        }
+        return $resultado;
+    }
+
     private static function preparar($conexion, $consulta, ...$parametros) {
         $preparacion = $conexion->prepare($consulta);
         if ($parametros) {

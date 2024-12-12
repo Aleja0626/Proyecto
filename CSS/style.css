@@ -5,6 +5,7 @@
 	box-sizing: border-box;
 }
 
+
 /* SECCION ENCABEZADO */
 
 nav {
@@ -190,7 +191,7 @@ nav {
 	text-align: center;
 	font-size: 4rem;
 	z-index: 5;
-	margin-left: 40px;
+	margin-left: 120px;
 	color: #BA5E09;
 }
 
@@ -256,31 +257,31 @@ nav {
 
 #fondoHero0{
 
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Media/Hero0.png");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://blog.martatrendyhair.com/MEDIA/Hero0.png");
 		z-index: 4;
 }
 
 #fondoHero1{
 
-		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Media/Hero1.jpeg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("http://blog.martatrendyhair.com/MEDIA/Hero1.jpeg");
 		z-index: 3;
 }
 
 #fondoHero2{
 
-		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Media/Hero2.jpg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("http://blog.martatrendyhair.com/MEDIA/Hero2.jpg");
 		z-index: 2;
 }
 
 #fondoHero3{
 
-		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Media/Hero3.jpeg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("http://blog.martatrendyhair.com/MEDIA/Hero3.jpeg");
 		z-index: 1;
 }
 
 #fondoHero4{
 
-		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Media/Hero4.jpeg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("http://blog.martatrendyhair.com/MEDIA/Hero4.jpeg");
 		z-index: 0;
 }
 
@@ -375,10 +376,13 @@ nav {
 }
 
 .articulos {
+
+	width: 100%;
+	height: 1080px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+   
 }
 
 .imagenArticulo img{
@@ -447,11 +451,6 @@ nav {
 
 }
 
-.articulos{
-
-	width: 100%;
-	height: 1080px;
-}
 
 .articulosC{
 
@@ -463,7 +462,90 @@ nav {
 	background-color: #a3bcdd;
 }
 
-#pPrincipal> h1{
+.articulosD{
+
+	width: 100%;
+	height: 1080px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-color: #f5cca6;
+}
+
+.verArticuloD {
+    width: 365px;
+    background-color: #55EDE4;
+    color: white;
+    font-size: 2rem;
+    padding: 10px; /* Ajusta el padding a un valor específico */
+    margin: 80px auto; /* Ajusta el margen a un valor más razonable */
+    margin-left: auto; /* Centra el elemento horizontalmente */
+    margin-top: 40px;
+    border-style: groove;
+    border: rgb(71, 158, 146) 2px outset;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 3px;
+    font-family: "nunito,regular";
+	text-align: center;
+}
+
+.contArtExtras{
+
+	width: 1200px;
+	height: 750px;
+	margin-left: 357px;
+	margin-right: 150px;
+	margin-top: 42px;
+	overflow: hidden;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+   
+}
+
+.columArtExtras{
+
+	width: 50%;
+	/*background-color: grey;*/
+	height: 715px;
+	margin-right:auto;
+	margin-left: auto;
+	float: left;
+	border-radius: 30px;
+	font-family: "nunito", sans-serif;
+	margin: 10px;
+	text-align: center;
+}
+
+.columArtExtras> a{
+
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: black;
+	font-family: sans-serif,"strong";
+}
+
+.verArticuloD:hover {
+
+	border-style: solid;
+	border-color: #610952;
+	background-color: #e2e057;
+	color: #a50264;
+
+}
+
+.pPrincipal{
+
+	text-align: center;
+}
+
+.pPrincipal> h1{
 
 	margin-top: 150px;
 	margin-bottom: 50px;
@@ -473,7 +555,7 @@ nav {
 	color: #BA5E09;
 }
 
-#pPrincipal> img{
+.pPrincipal> img{
 
 	width: 1047px;
 	height: 712px;
@@ -567,7 +649,7 @@ nav {
 	margin-left: 50px;
 	margin-top: 20px;
     margin: 10px;
-    text-align: justify;
+    text-align: left;
 }
 
 /* SECCION TENDENCIA DOS*/
@@ -621,7 +703,6 @@ nav {
 
 	width: 1200px;
 	height: 878px;
-	/*background-color: #610952;*/
 	margin-left: 360px;
 	margin-right: 360px;
 }
@@ -630,9 +711,9 @@ nav {
 
 	width: 619px;
 	height: 457px;
-	background-color: #a8569b;
 	text-align: center;
 	margin-left: 303px;
+	border-radius: 10px;
 
 }
 
@@ -703,35 +784,59 @@ nav {
 	background-size: cover;
 	overflow: hidden;
 	background-color: #CAECF0;
+	border-color: #2D0231;
+}
+
+.seccionConsejoA{
+	width: 100%;
+	height: 1080px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #a3bcdd;
+}
+
+.seccionConsejoB{
+	width: 100%;
+	height: 1080px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #dfb7cd;
 }
 
 /* FORMULARIO DE SUSCRIPCION*/
 
-#formulario{
-
-	width: 100%;
-	height: 1080px;
-	overflow: hidden;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Media/FondoFormulario.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: absolute;
+#formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://blog.martatrendyhair.com/MEDIA/FondoFormulario.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
 }
 
 
-#formu{
-
-	width: auto;
-	height: 450px;
-	float: right;
-	padding-left: 360px;
-	padding-top: 360px;
-	font-size: 1.25rem;
-	font-weight: bold;
-	margin-right: 500px;
-	font-size: 3rem;
-
+#formu {
+    width: auto;
+    height: 450px;
+    padding: 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 /* TITULO DEL FORMULARIO*/ 
 
@@ -901,8 +1006,8 @@ input {
 
   width:100%;
   height:220px;
-  padding-top: 50px;
-
+  position: relative; /* o absolute, fixed, sticky según sea necesario */
+  z-index: 1; /* Asegúrate de que este valor sea menor que el del formulario */
 }
 
 .politicas{

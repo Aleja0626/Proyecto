@@ -4,14 +4,12 @@ let bgcont =0;
 function heroSlideShow(){
 
 	let listImgHero = [
-
-		"url('MEDIA/Hero0.png')",
-		"url('MEDIA/Hero1.jpeg')",
-		"url('MEDIA/Hero2.jpg')",
-		"url('MEDIA/Hero3.jpeg')",
-		"url('MEDIA/Hero4.jpeg')"
-
-		];
+		"url('http://localhost/Proyecto//public/media/Hero0.png')",
+		"url('http://localhost/Proyecto//public/media/Hero1.jpeg')",
+		"url('http://localhost/Proyecto//public/media/Hero2.jpg')",
+		"url('http://localhost/Proyecto//public/media/Hero3.jpeg')",
+		"url('http://localhost/Proyecto//public/media/Hero4.jpeg')"
+	];
 
 	bgcont++;
 
@@ -96,3 +94,5 @@ function cerrarModal() {
 
 // Iniciar la animación del slideshow
 setInterval(imagenSalienteAnim, 5000); // Cambiar imagen cada 5 segundos
+
+

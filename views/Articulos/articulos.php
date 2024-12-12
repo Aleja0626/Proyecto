@@ -15,9 +15,9 @@ define('BASE_URL', 'http://localhost/Proyecto/');
     </header>
     <div class="container">
         <section class="articulos" id="artPrincipal">
-            <div id="pPrincipal">
+            <div class="pPrincipal">
                 <h1>Sección de articulos Principales</h1>
-                <img src="../MEDIA/seccionArticulos/portadaArticulos.jpg" alt="">
+                <img src="../../MEDIA/seccionArticulos/portadaArticulos.jpg" alt="">
               
             </div>
         
@@ -28,7 +28,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
             <h2 id="tituloTendencia">Ropa para fiesta y Ocasiones Especiales</h2>
             <div class="contenedorTendencia">
                 <div class="columTendencia">
-                    <img src="<?php echo BASE_URL; ?>public/media/tendencia1.jpeg" id="imgTendencia" alt="">
+                    <img src="../../MEDIA/seccionArticulos/articulo1.jpg" id="imgTendencia" alt="">
                 </div>
                 <div class="textoTendencia">
                     <p>
@@ -49,7 +49,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
             <h2 id="tituloTendencia">Aprende a escoger la talla adecuada</h2>
             <div class="contenedorTendencia">
                 <div class="columTendencia">
-                    <img src="../MEDIA/seccionArticulos/articulo2.jpg" id="imgTendencia" alt="">
+                    <img src="../../MEDIA/seccionArticulos/articulo2.jpg" id="imgTendencia" alt="">
                 </div>
                 <div class="textoTendencia">
                     <p>
@@ -72,7 +72,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
             <h2 id="tituloTendencia">España, superpotencia en moda infantil</h2>
             <div class="contenedorTendencia">
                 <div class="columTendencia">
-                    <img src="../MEDIA/seccionArticulos/articulo3.jpg" id="imgTendencia" alt="">
+                    <img src="../../MEDIA/seccionArticulos/articulo3.jpg" id="imgTendencia" alt="">
                 </div>
                 <div class="textoTendencia">
                     <p>
@@ -93,7 +93,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
             <h2 id="tituloTendencia">Ropa infantil en expansion por Europa</h2>
             <div class="contenedorTendencia">
                 <div class="columTendencia">
-                    <img src="../MEDIA/seccionArticulos/articulo4.jpg" id="imgTendencia" alt="">
+                    <img src="../../MEDIA/seccionArticulos/articulo4.jpg" id="imgTendencia" alt="">
                 </div>
                 <div class="textoTendencia">
                     <p>
@@ -111,7 +111,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
             <h2 id="tituloTendencia">Panorama actual de la Moda infantil</h2>
             <div class="contenedorTendencia">
                 <div class="columTendencia">
-                    <img src="../MEDIA/seccionArticulos/articulo5.jpg" id="imgTendencia" alt="">
+                    <img src="../../MEDIA/seccionArticulos/articulo5.jpg" id="imgTendencia" alt="">
                 </div>
                 <div class="textoTendencia">
                     <p>
@@ -129,7 +129,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
             <h2 id="tituloTendencia">¿Skincare para las niñas?como cuidar la piel infantil</h2>
             <div class="contenedorTendencia">
                 <div class="columTendencia">
-                    <img src="../MEDIA/seccionArticulos/articulo6.jpg" id="imgTendencia" alt="">
+                    <img src="../../MEDIA/seccionArticulos/articulo6.jpg" id="imgTendencia" alt="">
                 </div>
                 <div class="textoTendencia">
                     <p>
@@ -146,7 +146,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
             <h2 id="tituloTendencia">La Moda Infantil de Segunda Mano: Ventajas y Consejos</h2>
             <div class="contenedorTendencia">
                 <div class="columTendencia">
-                    <img src="../MEDIA/seccionArticulos/articulo7.jpg" id="imgTendencia" alt="">
+                    <img src="../../MEDIA/seccionArticulos/articulo7.jpg" id="imgTendencia" alt="">
                 </div>
                 <div class="textoTendencia">
                     <p>
@@ -166,7 +166,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
             <h2 id="tituloTendencia">Cómo Organizar el Armario Infantil: Consejos para Maximizar el Espacio </h2>
             <div class="contenedorTendencia">
                 <div class="columTendencia">
-                    <img src="../MEDIA/seccionArticulos/articulo8.jpg" id="imgTendencia" alt="">
+                    <img src="../../MEDIA/seccionArticulos/articulo8.jpg" id="imgTendencia" alt="">
                 </div>
                 <div class="textoTendencia">
                     <p>
@@ -181,10 +181,10 @@ define('BASE_URL', 'http://localhost/Proyecto/');
         </section> 
         <!-- ARTICULO 9 -->
         <section class="articulosC">
-            <h2 id="tituloTendencia">articulo 9</h2>
+            <h2 id="tituloTendencia">Prendas Infalibles: Todo Niño Necesita en su Armario</h2>
             <div class="contenedorTendencia">
                 <div class="columTendencia">
-                    <img src="../MEDIA/seccionArticulos/articulo9.jpg" id="imgTendencia" alt="">
+                    <img src="../../MEDIA/seccionArticulos/articulo9.jpg" id="imgTendencia" alt="">
                 </div>
                 <div class="textoTendencia">
                     <p>
@@ -199,11 +199,11 @@ define('BASE_URL', 'http://localhost/Proyecto/');
         </section> 
         <!-- ARTICULO 10 -->
         <section class="articulos">
-            <h2 id="tituloTendencia">articulo 10</h2>
+            <h2 id="tituloTendencia">Cómo Mantener la Ropa en Buen Estado todo el Año</h2>
             <div class="contenedorTendencia">
 
                 <div class="columTendencia">
-					<img src="../MEDIA/seccionArticulos/articulo10.jpg" id="imgTendencia" alt="">
+					<img src="../../MEDIA/seccionArticulos/articulo10.jpg" id="imgTendencia" alt="">
 				</div>
 				<div class="textoTendencia">
 					<p>
@@ -227,7 +227,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 			<div class="contenedorTendencia">
 
 				<div class="columTendencia">
-					<img src="../MEDIA/seccionArticulos/articulo11.jpg" id="imgTendencia" alt="">
+					<img src="../../MEDIA/seccionArticulos/articulo11.jpg" id="imgTendencia" alt="">
 				</div>
 
 				<div class="textoTendencia">
@@ -251,7 +251,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 			<div class="contenedorTendencia">
 
 				<div class="columTendencia">
-					<img src="../MEDIA/seccionArticulos/articulo12.jpg" id="imgTendencia" alt="">
+					<img src="../../MEDIA/seccionArticulos/articulo12.jpg" id="imgTendencia" alt="">
 				</div>
 
 				<div class="textoTendencia">
@@ -268,7 +268,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 		</section> 
     </div>
     <footer>
-        <?php include '/includes/footer.php'; ?>
+        <?php include '../includes/footer.php'; ?>
     </footer>
 </body>
 </html>

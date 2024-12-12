@@ -13,10 +13,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<script src="<?php echo BASE_URL; ?>public/js/script.js"></script>
 
-	<!-- LINK DE LAS FUENTES -->
-
 	<!-- NUNITO -->
-	
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,15 +24,15 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap" rel="stylesheet">
-
+	
 	
 	<!-- LISTA DE IMAGENES PRE-CARGADAS -->
 
-	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>public/media/Hero0.png">
-	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>public/media/Hero1.jpeg">
-	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>public/media/Hero2.jpg">
-	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>public/media/Hero3.jpeg">
-	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>public/media/Hero4.jpeg">
+	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>MEDIA/Hero0.png">
+	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>MEDIA/Hero1.jpeg">
+	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>MEDIA/Hero2.jpg">
+	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>MEDIA/Hero3.jpeg">
+	<link rel="preload" as="image" href="<?php echo BASE_URL; ?>MEDIA/Hero4.jpeg">
 
 </head>
 
@@ -54,9 +51,10 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 					<li class="elementoMenu"><a href="#tendUno"onclick="">Tendencias</li>
 					<li class="elementoMenu"><a href="#consejoUno"onclick="">Consejos</li>
 						<ul id="submenu">
-							<li class="elemSubMenu"><a href="#ConsejoUno" onclick=""></a>Moda</li>
-							<li class="elemSubMenu"><a href="#consejoDos" onclick=""></a>Aprende de Colorimetria</li>
-							<li class="elemSubMenu"><a href="#ConsejoTres" onclick=""></a>Eventos</li>
+							<li class="elemSubMenu"><a href="#contenedorConsejo" onclick="">Moda</a></li>
+							<li class="elemSubMenu"><a href="#consejoDos" onclick="">Aprende de Colorimetria</a></li>
+							<li class="elemSubMenu"><a href="#consejoTres" onclick="">Evento BabyKid Spain</a></li>
+
 						</ul>
 					<li class="elementoMenu"><a id="titTienda" href="https://darkorchid-badger-317144.hostingersite.com/"  target="_blank">Visita nuestra Tienda Online</li>
 					<li class="elementoMenu"><a href="#formulario">Inscribete y recibe novedades</li>
@@ -70,7 +68,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 			<div class="imagenP">
 				<a href="#tendUno">
 					<img src="<?php echo BASE_URL; ?>MEDIA/IMG-Art_Principal.jpg" alt="">
-					<h2 class="subtituloEncabezado">Tendencias Otoño - Invierno<br>2024</h2>
+					<h2 class="subtituloEncabezado">Tendencias Invierno<br>2024</h2>
 				</a>
 			</div>		
 		</div>
@@ -189,7 +187,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art8.jpeg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo8.php">Cómo Organizar el Armario Infantil: Consejos.</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo8.php">Organizar el Armario Infantil:Maximizar el Espacio.</a>
 						</div>
 
 			<!-- ARTICULO 9	 -->
@@ -198,7 +196,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art9.jpg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo9.php">España, superpotencia en moda infantil</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo9.php">Prendas Infalibles: Todo Niño Necesita en su Armario</a>
 						</div>
 
 			<!-- ARTICULO 10	 -->
@@ -207,7 +205,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 							<div class="imagenArticulo ">
 								<img src="<?php echo BASE_URL; ?>MEDIA/art10.jpg" alt="">
 							</div>
-							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo10.php" class="text">Ropa infantil en expansion por Europa</a>
+							<a class ="nombreArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulo10.php" class="text">Cómo Mantener la Ropa en Buen Estado todo el Año</a>
 						</div>
 
 			<!--ARTICULO 11	-->
@@ -229,7 +227,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 						</div>			
 			</div>
 			<div class="contenedorBoton">
-				<a id="verArticulo" href="<?php echo BASE_URL; ?>views/articulos.php" class="button">Ver Artículos</a>
+				<a id="verArticulo" href="<?php echo BASE_URL; ?>views/Articulos/articulos.php" class="button">Ver Artículos</a>
 			</div>
 		</section>
 
@@ -382,6 +380,7 @@ define('BASE_URL', 'http://localhost/Proyecto/');
 						<a href="views/consejos/consejo3.php" class="button">Link</a>	
 					</div>	
 		</section>
+
 <!-- AQUI EMPIEZA EL FORMULARIO -->		
 		<section id="formulario">
 		<form id="formu" action="procesarFormulario.php" method="POST" data-aos="zoom-out-down">
@@ -389,33 +388,35 @@ define('BASE_URL', 'http://localhost/Proyecto/');
         <input id="formNombre" type="text" name="Nombre" placeholder="Escribe tu Nombre y Apellidos" required>
         <input id="formCorreo" type="email" name="Correo" placeholder="Escribe tu Email" required>
         <input id="botonEnviar" value="Suscríbete" type="submit" onclick="enviarFormulario()">
-    </form>
-</section>
+			</form>
+			<!-- MODAL DE CONTACTO -->
+				<div id="modalContacto" class="modal" style="display: none;">
+					<div class="modal-content">
+					
+						<?php
+								// Mostrar mensaje de éxito si se ha enviado correctamente
+								if (isset($_GET['success']) && $_GET['success'] == 1) {
+									echo  '<p class="mensajeC">Querido Usuario:</p>';
+									?>
+									<br>
+									<?php
+									echo '<p class="mensajeC">¡Gracias por suscribirte!</p>';
+								} elseif (isset($_GET['error']) && $_GET['error'] == 1) {
+									echo "Hubo un error al procesar tu solicitud. Inténtalo de nuevo.";
+								}
+							?>
+							<br>
+							
+						<button id="bottonCerrarMContacto" onclick="cerrarModal()" class="btnCerrar">Entendido</button>
+						
+					</div>
+				</div>
+	
+		</section>
 
-<!-- MODAL DE CONTACTO -->
-<div id="modalContacto" class="modal" style="display: none;">
-    <div class="modal-content">
-       
-		<?php
-                // Mostrar mensaje de éxito si se ha enviado correctamente
-                if (isset($_GET['success']) && $_GET['success'] == 1) {
-					echo  '<p class="mensajeC">Querido Usuario:</p>';
-					?>
-					<br>
-					<?php
-                    echo '<p class="mensajeC">¡Gracias por suscribirte!</p>';
-                } elseif (isset($_GET['error']) && $_GET['error'] == 1) {
-                    echo "Hubo un error al procesar tu solicitud. Inténtalo de nuevo.";
-                }
-            ?>
-			<br>
-			
-        <button id="bottonCerrarMContacto" onclick="cerrarModal()" class="btnCerrar">Entendido</button>
 		<footer>
 			<?php include 'views/includes/footer.php'; ?>
 		</footer>
-    </div>
-</div>
 		
 
 </body>
